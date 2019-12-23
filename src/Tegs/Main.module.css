@@ -1,0 +1,9 @@
+.main {
+    height: 300px;
+    background-color: #8f948f;
+}
+/*.main {*/
+/*    background: url(images/bg_left.gif) repeat-y,*/
+/*    #fff url(images/bg_right.gif) repeat-y 100% 0;*/
+/*    padding: 10px; !* Поля вокруг текста *!*/
+/*}*/
