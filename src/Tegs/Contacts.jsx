@@ -1,8 +1,9 @@
 import React from 'react';
+import s from './Contacts.module.css'
 
 function Contacts () {
     return (
-        <div className="Contacts">
+        <div className={s.Contacts}>
 
         </div>
     );
