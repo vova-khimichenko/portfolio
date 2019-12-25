@@ -1,31 +1,28 @@
 .header {
+    /*border: 1px #7dff10 dashed;*/
     height: 50px;
     background-color: #8c5a60;
     display: flex;
     justify-content: center;
-    border: 1px #7dff10 dashed;
-
 }
 
 .container {
+    /*border: 1px white dashed;*/
     width: 80%;
-    border: 1px white dashed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .nav {
+    /*border: 1px #2356ff dashed;*/
     width: 360px;
     display: flex;
     justify-content: space-between;
-    border: 1px #2356ff dashed;
-
 }
 
 .link {
+    /*border: 1px #ffda30 dashed;*/
     color: #f7f4cae0;
     text-decoration: none;
-    border: 1px #ffda30 dashed;
-
 }

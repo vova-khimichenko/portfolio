@@ -1,0 +1,6 @@
+.projects {
+    height: 350px;
+    background-color: #5c615dfa;
+    display: flex;
+    justify-content: center;
+}
