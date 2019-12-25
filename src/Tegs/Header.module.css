@@ -3,20 +3,29 @@
     background-color: #8c5a60;
     display: flex;
     justify-content: center;
+    border: 1px #7dff10 dashed;
+
 }
+
 .container {
     width: 80%;
-    /*border: 2px solid;*/
+    border: 1px white dashed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-color: #61dafb}
+}
+
 .nav {
     width: 360px;
     display: flex;
     justify-content: space-between;
+    border: 1px #2356ff dashed;
+
 }
+
 .link {
     color: #f7f4cae0;
     text-decoration: none;
+    border: 1px #ffda30 dashed;
+
 }
