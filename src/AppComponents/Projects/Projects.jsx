@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Projects.module.css'
-import Skill1 from "../Skills/Skill1";
-import Skill2 from "../Skills/Skill2";
-import Skill3 from "../Skills/Skill3";
+import Skill1 from "../Skills/ScillItems/Items/Skill1";
+import Skill2 from "../Skills/ScillItems/Items/Skill2";
+import Skill3 from "../Skills/ScillItems/Items/Skill3";
 
 function Projects () {
     return (
