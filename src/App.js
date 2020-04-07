@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from "./Tegs/Header";
-import Main from "./Tegs/Main";
-import Skills from "./Tegs/Skills";
-import Projects from "./Tegs/Projects";
-import Slogan from "./Tegs/Slogan";
-import Contacts from "./Tegs/Contacts";
-import Footer from "./Tegs/Footer";
+import Header from "./AppComponents/Header/Header";
+import Main from "./AppComponents/Main/Main";
+import Skills from "./AppComponents/Skills/Skills";
+import Projects from "./AppComponents/Projects/Projects";
+import Slogan from "./AppComponents/Slogan/Slogan";
+import Contacts from "./AppComponents/Contacts/Contacts";
+import Footer from "./AppComponents/Footer/Footer";
 
 function App() {
     return (

@@ -14,15 +14,3 @@
     align-items: center;
 }
 
-.nav {
-    /*border: 1px #2356ff dashed;*/
-    width: 360px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.link {
-    /*border: 1px #ffda30 dashed;*/
-    color: #f7f4cae0;
-    text-decoration: none;
-}
