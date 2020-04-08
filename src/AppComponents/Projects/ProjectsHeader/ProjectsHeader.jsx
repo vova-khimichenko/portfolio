@@ -4,7 +4,9 @@ import styles from './ProjectsHeader.module.css'
 function ProjectsHeader() {
     return (
         <div className={styles.blockHeader}>
-            <span className={styles.nameHeader}>My Projects</span>
+            <span className={styles.nameHeader}>
+                My Projects
+            </span>
         </div>
     );
 }
