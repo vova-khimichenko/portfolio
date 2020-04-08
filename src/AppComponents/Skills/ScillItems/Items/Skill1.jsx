@@ -6,7 +6,7 @@ function Skill1() {
         <div className={styles.container}>
             <div className={styles.top}>
             </div>
-            <div className={styles.react}>React</div>
+            <div className={styles.middle}>React</div>
             <div className={styles.bottom}>
                 <span>Подробное описание</span>
                 <span>навыка</span>

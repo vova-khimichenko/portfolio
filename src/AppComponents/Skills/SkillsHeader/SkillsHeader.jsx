@@ -3,8 +3,8 @@ import styles from './SkillsHeader.module.css'
 
 function SkillsHeader() {
     return (
-        <div className={styles.skillsHeader}>
-            <span className={styles.spanHeader}>My Skills</span>
+        <div className={styles.blockHeader}>
+            <span className={styles.nameHeader}>My Skills</span>
         </div>
     );
 }
