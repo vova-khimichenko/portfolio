@@ -9,7 +9,8 @@ function SkillItems() {
         <div className={styles.container}>
             <Skill1/>
             <Skill2/>
-            <Skill3/>
+            {/*<Skill3/> */}
+            {/*переносит контент и располагает поверх другого*/}
         </div>
     );
 }

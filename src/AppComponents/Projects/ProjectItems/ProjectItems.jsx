@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './ProjectsItems.module.css'
+import styles from './ProjectItems.module.css'
 import Project2 from "./Items/Project2";
 import Project1 from "./Items/Project1";
 
-function ProjectsItems() {
+function ProjectItems() {
     return (
         <div className={styles.container}>
             <Project1/>
@@ -12,4 +12,4 @@ function ProjectsItems() {
     );
 }
 
-export default ProjectsItems;
+export default ProjectItems;

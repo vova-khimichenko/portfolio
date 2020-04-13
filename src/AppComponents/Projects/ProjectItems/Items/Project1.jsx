@@ -5,17 +5,17 @@ function Project1() {
     return (
         <div className={styles.container}>
             <div className={styles.top}>
-                    <button className={styles.button}
-                            type="button">Смотреть
-                    </button>
+                <button className={styles.button}
+                        type="button">Смотреть
+                </button>
             </div>
             <div className={styles.bottom}>
-                <div className={styles.nameProject}>
-                    Название проекта
-                </div>
-                <div className={styles.descriptionProject}>
-                    Краткое описание проекта
-                </div>
+                    <span className={styles.nameProject}>
+                        Название проекта
+                    </span>
+                    <span className={styles.descriptionProject}>
+                        Краткое описание проекта
+                    </span>
             </div>
         </div>
     );

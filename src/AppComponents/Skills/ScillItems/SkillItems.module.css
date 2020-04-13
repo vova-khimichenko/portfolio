@@ -1,6 +1,8 @@
 .container {
     /*border: 2px black dashed;*/
-    height: 75%;
+    height: 80%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+
 }

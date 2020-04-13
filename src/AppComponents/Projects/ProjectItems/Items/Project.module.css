@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffe3d5;
+    margin: 20px;
 }
 
 .top {
@@ -32,17 +33,16 @@
     width: 45%;
     font-size: 20px;
     color: #8c5a60;
-    /*display: flex;*/
-    /*flex-wrap: nowrap;*/
-    /*justify-content: center;*/
-    /*текст центрируется, но не уменьшается*/
 }
 
 .nameProject {
     background-color: #8f948f;
+    height: 40%;
+    font-size: x-small;
 }
 
 .descriptionProject {
     background-color: #8f948f;
-    height: 60%;
+    height: 40%;
+    font-size: x-small;
 }

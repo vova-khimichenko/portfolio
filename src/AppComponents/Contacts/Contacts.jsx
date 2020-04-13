@@ -5,10 +5,9 @@ function Contacts() {
     return (
         <div className={styles.contacts}>
             <div className={styles.container}>
-                <div className={styles.top}>
-                    <span>Контакты
+                    <span className={styles.top}>
+                        Контакты
                     </span>
-                </div>
                 <form className={styles.tegForm}>
                     <input className={styles.tegInput}/>
                     <input className={styles.tegInput}/>

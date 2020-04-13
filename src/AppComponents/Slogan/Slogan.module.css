@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .container {
     border: 1px white dashed;
     width: 80%;
@@ -17,6 +18,7 @@
 
 .top {
     background-color: #8f948f;
+    text-align: center;
 }
 
 .button {

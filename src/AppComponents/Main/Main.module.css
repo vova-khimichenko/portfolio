@@ -1,5 +1,5 @@
 .main {
-    /*border: 1px #7dff10 dashed;*/
+        /*border: 1px #7dff10 dashed;*/
     height: 100vh;
     background-color: #8f948f;
     display: flex;
@@ -14,4 +14,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
 }
