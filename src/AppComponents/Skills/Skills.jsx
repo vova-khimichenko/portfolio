@@ -1,14 +1,17 @@
 import React from 'react';
 import styles from './Skills.module.css'
-import SkillsHeader from "./SkillsHeader/SkillsHeader";
-import SkillItems from "./ScillItems/SkillItems";
+import Skill from "./Items/Skill";
 
 function Skills() {
     return (
-        <div className={styles.skills}>
-            <div className={styles.container}>
-                <SkillsHeader/>
-                <SkillItems/>
+        <div className={styles.skillsBlock}>
+            <div className={styles.skillsContainer}>
+                <h2 className={styles.titleSkills}>My skills</h2>
+                <div className={styles.skills}>
+                    <Skill/>
+                    <Skill/>
+                    <Skill/>
+                </div>
             </div>
         </div>
     );
