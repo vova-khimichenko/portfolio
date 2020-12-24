@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './Main.module.css'
-import Greeting from "./Greeting/Greeting";
-import Photo from "./Photo/Photo";
 
 function Main() {
     return (
-        <div className={styles.main}>
-            <div className={styles.container}>
-                <Greeting/>
-                <Photo/>
+        <div className={styles.mainBlock}>
+            <div className={styles.mainContainer}>
+                <span className={styles.mainGreeting}>
+                    Меня зовут Вовка Химик +100500 к карме вашей компании
+                </span>
+                <div className={styles.mainPhoto}></div>
             </div>
         </div>
     );
