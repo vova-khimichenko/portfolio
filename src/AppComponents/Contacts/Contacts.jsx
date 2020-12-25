@@ -3,9 +3,9 @@ import styles from './Contacts.module.css'
 
 function Contacts() {
     return (
-        <div className={styles.contacts}>
-            <div className={styles.container}>
-                    <span className={styles.top}>
+        <div className={styles.contactsBlock}>
+            <div className={styles.contactContainer}>
+                    <span className={styles.contactTitle}>
                         Контакты
                     </span>
                 <form className={styles.tegForm}>

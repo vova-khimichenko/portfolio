@@ -1,4 +1,4 @@
-.footer {
+.footerBlock {
     height: 300px;
     background-color: #10100ec7;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: flex-end;
 }
 
-.container {
+.footerContainer {
     border: 1px white dashed;
     width: 80%;
     height: 74%;
@@ -17,8 +17,12 @@
     margin-bottom: 1%;
 }
 
-.net {
-    width: 40%;
+.footerTitle {
+    background-color: #8f948f;
+}
+
+.socialLinks {
+    width: 311px;
     display: flex;
     justify-content: space-around;
 }
@@ -30,4 +34,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footerBottom {
+    background-color: #8f948f;
+
 }
