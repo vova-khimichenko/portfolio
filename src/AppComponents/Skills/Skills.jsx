@@ -6,7 +6,9 @@ function Skills() {
     return (
         <div className={styles.skillsBlock}>
             <div className={styles.skillsContainer}>
-                <h2 className={styles.titleSkills}>My skills</h2>
+                <h3 className={styles.skillsTitle}>
+                    My skills
+                </h3>
                 <div className={styles.skills}>
                     <Skill/>
                     <Skill/>

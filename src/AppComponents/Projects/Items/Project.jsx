@@ -1,19 +1,20 @@
 import React from 'react';
 import styles from './Project.module.css'
 
-function Project1() {
+function Project() {
     return (
-        <div className={styles.container}>
-            <div className={styles.top}>
+        <div className={styles.projectContainer}>
+            <div className={styles.backgroundImage}>
                 <button className={styles.button}
                         type="button">Смотреть
                 </button>
             </div>
-            <div className={styles.bottom}>
-                    <span className={styles.nameProject}>
+            <div className={styles.project}>
+                    <h4 className={styles.projectTitle}>
                         Название проекта
-                    </span>
-                    <span className={styles.descriptionProject}>
+                    </h4>
+                    <span className={styles.projectDescription}>
+                        Краткое описание проекта
                         Краткое описание проекта
                     </span>
             </div>
@@ -21,4 +22,4 @@ function Project1() {
     );
 }
 
-export default Project1;
+export default Project;

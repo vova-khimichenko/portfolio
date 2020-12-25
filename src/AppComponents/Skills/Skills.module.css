@@ -12,8 +12,8 @@
 
 .skillsContainer {
     border: 1px white dashed;
-    width: 80%;
     min-height:  80vh;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,13 +21,13 @@
     /*margin: 10px;*/
 }
 
-.titleSkills {
+.skillsTitle {
     background-color: #8f948f;
 }
 
 .skills {
     border: 2px black dashed;
-    min-height: 55vh;
+    /*min-height: 55vh;*/
     width: 100% ;
     display: flex;
     flex-flow: row wrap;

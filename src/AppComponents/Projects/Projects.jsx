@@ -1,14 +1,18 @@
 import React from 'react';
 import styles from './Projects.module.css'
-import ProjectsHeader from "./ProjectsHeader/ProjectsHeader";
-import ProjectItems from "./ProjectItems/ProjectItems";
+import Project from "./Items/Project";
 
 function Projects() {
     return (
-        <div className={styles.projects}>
-            <div className={styles.container}>
-                <ProjectsHeader/>
-                <ProjectItems/>
+        <div className={styles.projectsBlock}>
+            <div className={styles.projectsContainer}>
+                <h3 className={styles.projectsTitle}>
+                    My Projects
+                </h3>
+                <div className={styles.projects}>
+                    <Project/>
+                    <Project/>
+                </div>
             </div>
         </div>
     );

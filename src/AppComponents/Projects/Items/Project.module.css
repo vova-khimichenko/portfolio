@@ -1,30 +1,25 @@
-.container {
-    /*border: 1px white dashed;*/
+* {
+    box-sizing: border-box;
+}
+
+.projectContainer {
+    /*border: 2px white dashed;*/
+    /*height: 55vh;*/
     width: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: #ffe3d5;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 
-.top {
+.backgroundImage {
+    height: 40vh;
     width: 100%;
-    height: 75%;
     background-color: rgba(232, 151, 162, 0.35);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.bottom {
-    /*border: 2px black dashed;*/
-    height: 25%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .button {
@@ -35,14 +30,20 @@
     color: #8c5a60;
 }
 
-.nameProject {
-    background-color: #8f948f;
-    height: 40%;
-    font-size: x-small;
+.project {
+    /*border: 2px black dashed;*/
+    width: 80%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.descriptionProject {
+
+.projectTitle {
     background-color: #8f948f;
-    height: 40%;
-    font-size: x-small;
+}
+
+.projectDescription {
+    background-color: #8f948f;
+    min-height: 40%;
 }

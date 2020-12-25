@@ -6,10 +6,9 @@ function Skill() {
         <div className={styles.skillContainer}>
             <div className={styles.iconSkill}></div>
             <h3>React</h3>
-            <span>
-                    m,.mm/.,m/,.m/.,m/.
-                    ,m.,////////////////// ///////////////// ///;kljkljkldf;ldskf;ldkf   ;ldsfk;lmkljklj
-                    m,.mm/.,m/,.m/.,m/.
+            <span>в консоли переходим в папку, в которой будет проект (d: - перейти на диск, cd путь к папке - перейти
+                в папку, cd .. - выйти из папки (подняться на уровень выше))Копируем команду npx create-react-app my-app
+                и вместо my-app  пишем название нашего проекта
             </span>
         </div>
     );
