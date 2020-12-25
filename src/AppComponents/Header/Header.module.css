@@ -1,18 +1,33 @@
-.header {
-    /*border: 1px #7dff10 dashed;*/
+* {
+    box-sizing: border-box;
+}
+
+.headerBlock {
     height: 65px;
+    width: 100%;
     background-color: #8c5a60;
     display: flex;
     justify-content: center;
     position: fixed;
-    width: 100%;
 }
 
-.container {
-    /*border: 1px white dashed;*/
+.headerContainer {
+    border: 1px white dashed;
     width: 80%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.navMenu {
+    /*border: 1px #2356ff dashed;*/
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    /*border: 1px #ffda30 dashed;*/
+    color: #f7f4cae0;
+    text-decoration: none;
 }
 

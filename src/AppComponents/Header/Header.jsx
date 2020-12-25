@@ -1,12 +1,20 @@
 import React from 'react';
 import styles from './Header.module.css'
-import NavMenu from "./NavMenu/NavMenu";
 
 function Header() {
     return (
-        <div className={styles.header}>
-            <div className={styles.container}>
-                <NavMenu/>
+        <div className={styles.headerBlock}>
+            <div className={styles.headerContainer}>
+                <div className={styles.navMenu}>
+                    <a href=""
+                       className={styles.link}>General</a>
+                    <a href=''
+                       className={styles.link}>Skills</a>
+                    <a href=''
+                       className={styles.link}>Projects</a>
+                    <a href=''
+                       className={styles.link}>Contacts</a>
+                </div>
             </div>
         </div>
     );
