@@ -1,4 +1,8 @@
-.slogan {
+* {
+    box-sizing: border-box;
+}
+
+.sloganBlock {
     height: 250px;
     background-color: #a27229e3;
     display: flex;
@@ -6,7 +10,7 @@
     align-items: center;
 }
 
-.container {
+.sloganContainer {
     border: 1px white dashed;
     width: 80%;
     height: 50%;
@@ -16,7 +20,7 @@
     align-items: center;
 }
 
-.top {
+.sloganTitle {
     background-color: #8f948f;
     text-align: center;
 }

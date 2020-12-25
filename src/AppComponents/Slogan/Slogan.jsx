@@ -3,14 +3,14 @@ import styles from './Slogan.module.css'
 
 function Slogan() {
     return (
-        <div className={styles.slogan}>
-            <div className={styles.container}>
-                <div className={styles.top}>
+        <div className={styles.sloganBlock}>
+            <div className={styles.sloganContainer}>
+                <span className={styles.sloganTitle}>
                         Рассматриваю варианты удалённой работы
-                </div>
-                    <button className={styles.button}
-                            type="button">Нанять меня
-                    </button>
+                </span>
+                <button className={styles.button}
+                        type="button">Нанять меня
+                </button>
             </div>
         </div>
     );
