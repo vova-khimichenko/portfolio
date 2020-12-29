@@ -8,7 +8,6 @@ function Main() {
                 <span className={styles.mainGreeting}>
                     Меня зовут Вовка Химик +100500 к карме вашей компании
                 </span>
-                <div className={styles.mainPhoto}></div>
             </div>
         </div>
     );
