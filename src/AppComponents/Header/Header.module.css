@@ -14,8 +14,20 @@
 .miPhotoContainer {
     width: 100%;
     height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.miPhoto {
+    height: 200px;
+    width: 200px;
+    border-radius: 1000px;
+    border: 7px solid #2e344e;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .navMenu {
     height: 52%;
