@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.module.css'
 
 function Header() {
+    const year = new Date().getFullYear()
     return (
         <div className={styles.headerBlock}>
             <div className={styles.miPhotoContainer}>
@@ -20,7 +21,7 @@ function Header() {
                    className={styles.link}>Contacts</a>
             </div>
             <div className={styles.copyright}>
-                © 2020 VovkaHimik
+                © {year} <span className={styles.mi}>VovkaHimik</span>
             </div>
         </div>
     );
