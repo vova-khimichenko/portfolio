@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import Header from "./AppComponents/Header/Header";
-import Main from "./AppComponents/Main/Main";
+import Home from "./AppComponents/Home/Home";
 import Skills from "./AppComponents/Skills/Skills";
 import Projects from "./AppComponents/Projects/Projects";
 import Slogan from "./AppComponents/Slogan/Slogan";
@@ -11,13 +11,15 @@ import Footer from "./AppComponents/Footer/Footer";
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Slogan/>
-            <Contacts/>
-            <Footer/>
+            <div className={styles.appContainer}>
+                <Header/>
+                <Home/>
+                {/*<Skills/>*/}
+                {/*<Projects/>*/}
+                {/*<Slogan/>*/}
+                {/*<Contacts/>*/}
+                {/*<Footer/>*/}
+            </div>
         </div>
     );
 }

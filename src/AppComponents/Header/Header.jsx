@@ -5,9 +5,9 @@ import miPhoto from '../../assets/miPhotoHeader.jpg'
 function Header() {
     const year = new Date().getFullYear()
     return (
-        <div className={styles.headerBlock}>
-            <div className={styles.miPhotoContainer}>
-                <img className={styles.miPhoto} src={miPhoto} alt={''}/>
+        <div className={styles.container}>
+            <div className={styles.photoBlock}>
+                <img className={styles.photo} src={miPhoto} alt={''}/>
             </div>
             <nav className={styles.navMenu}>
                 <a href='/home'
@@ -22,7 +22,7 @@ function Header() {
                    className={styles.link}>Contacts</a>
             </nav>
             <div className={styles.copyright}>
-                © {year} <span className={styles.mi}>VovkaHimik</span>
+                © {year} <span className={styles.userName}>VovkaHimik</span>
             </div>
         </div>
     )
