@@ -9,7 +9,7 @@ function Header() {
             <div className={styles.miPhotoContainer}>
                 <img className={styles.miPhoto} src={miPhoto} alt={''}/>
             </div>
-            <div className={styles.navMenu}>
+            <nav className={styles.navMenu}>
                 <a href='/home'
                    className={styles.link}>Home</a>
                 <a href='/about'
@@ -20,7 +20,7 @@ function Header() {
                    className={styles.link}>Projects</a>
                 <a href='/contacts'
                    className={styles.link}>Contacts</a>
-            </div>
+            </nav>
             <div className={styles.copyright}>
                 © {year} <span className={styles.mi}>VovkaHimik</span>
             </div>
