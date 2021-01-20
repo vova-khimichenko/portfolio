@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.home {
     height: 100vh;
     width: 1116px;
     background-color: #131724;
@@ -34,11 +34,19 @@
     font-size: 1.5em;
     margin: 20px;
 }
-.iconContainer{
-    width: 175px;
+
+.icons {
+    width: 234px;
     display: flex;
     justify-content: space-around;
 }
+
 .icon {
-    height: 24px;
+    height: 26px;
+    width: 26px;
+    transition: 400ms;
+}
+
+.icon:hover {
+    transform: scale(1.5);
 }
