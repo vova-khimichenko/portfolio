@@ -22,7 +22,7 @@ function Header() {
                    className={styles.link}>Contacts</a>
             </nav>
             <div className={styles.copyright}>
-                © {year} <span className={styles.userName}>VovkaHimik</span>
+                © {year} <span className={styles.userName}>vovkahimik</span>
             </div>
         </div>
     )
