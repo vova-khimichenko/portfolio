@@ -34,3 +34,11 @@
     font-size: 1.5em;
     margin: 20px;
 }
+.iconContainer{
+    width: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    height: 24px;
+}

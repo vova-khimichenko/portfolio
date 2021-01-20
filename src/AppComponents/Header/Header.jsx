@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Header.module.css'
-import miPhoto from '../../assets/miPhotoHeader.jpg'
+import avaPhoto from '../../assets/images/myPhoto.jpg'
 
 function Header() {
     const year = new Date().getFullYear()
     return (
         <div className={styles.container}>
             <div className={styles.photoBlock}>
-                <img className={styles.photo} src={miPhoto} alt={''}/>
+                <img className={styles.photo} src={avaPhoto} alt={'avaPhoto'}/>
             </div>
             <nav className={styles.navMenu}>
                 <a href='/home'
