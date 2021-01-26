@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Slogan.module.css'
+import styles from './About.module.css'
 
-function Slogan() {
+function About() {
     return (
         <div className={styles.sloganBlock}>
             <div className={styles.sloganContainer}>
@@ -16,4 +16,4 @@ function Slogan() {
     );
 }
 
-export default Slogan;
+export default About;

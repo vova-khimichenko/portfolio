@@ -8,6 +8,7 @@
     background-color: #1f1e2b;
     display: flex;
     flex-direction: column;
+    border-right: #2e344e solid 2px;
 }
 
 .photoBlock {
@@ -27,7 +28,6 @@
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
-
 }
 
 .navMenu {
