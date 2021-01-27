@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+
+  .header {
+    height: 100vh;
+    width: 250px;
+    background-color: #1f1e2b;
+    display: flex;
+    flex-direction: column;
+    border-right: #2e344e solid 2px;
+
+    .photoBlock {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      .photoAva {
+        height: 200px;
+        width: 200px;
+        border-radius: 1000px;
+        border: 7px solid #2e344e;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .navLinks {
+      height: 52%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px 0;
+      border-top: 1px solid #2e344e;
+
+      .link {
+        color: #a4acc4;
+        text-transform: uppercase;
+        font-size: .94rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-decoration: none;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition: all .4s ease-out;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 100%;
+          height: 100%;
+          width: 0;
+          background: rgba(3, 127, 255, 0.2);
+          visibility: hidden;
+          transition: all .4s ease-out;
+          z-index: -1;
+        }
+
+        &:hover {
+          color: #037fff;
+        }
+
+        &:hover:before {
+          width: 100%;
+          visibility: visible;
+          opacity: inherit;
+        }
+
+        &:active::selection {
+          color: #fff;
+          background: #037fff;
+        }
+      }
+    }
+
+    .copyright {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+      padding: 15px 0;
+      border-top: 1px solid #2e344e;
+      color: #a4acc4;
+
+      .userName {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+
+
+
