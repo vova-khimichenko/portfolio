@@ -1,0 +1,25 @@
+@import "src/sass/base";
+
+.app {
+  .verticalLines {
+    @include page;
+    flex-direction: row;
+    justify-content: normal;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-color: #10121b;
+
+    .line {
+      width: 1px;
+      background: rgba(46, 52, 78, .3);
+      //display: inline-block;
+        left: 20%;
+
+    }
+  }
+}
+  .span:first-child {
+    left: 20%
+  }

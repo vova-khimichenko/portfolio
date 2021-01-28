@@ -1,15 +1,7 @@
 @import "src/sass/base";
 
-* {
-    box-sizing: border-box;
-
-    .page {
-        @include page;
-
-        .titleBlock {
-            @include titleBlock;
-        }
-    }
+.page {
+  @include page;
 }
 
 //.tegForm {

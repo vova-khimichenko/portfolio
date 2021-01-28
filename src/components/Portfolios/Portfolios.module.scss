@@ -1,15 +1,9 @@
 @import "src/sass/base";
 
-* {
-    box-sizing: border-box;
 
-    .page {
-        @include page;
+.page {
+  @include page;
 
-        .titleBlock {
-            @include titleBlock;
-        }
-    }
 }
 
 //.projectsContainer {

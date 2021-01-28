@@ -1,41 +1,37 @@
 @import "src/sass/base";
 
-* {
-  box-sizing: border-box;
+.page {
+  @include page;
+  align-items: center;
 
-  .page {
-   @include page;
-    align-items: center;
+  .greeting {
+    @include greeting;
 
-    .greeting {
-     @include greeting;
-
-      .name {
-        color: #037fff;
-      }
+    .name {
+      color: #037fff;
     }
+  }
 
-    .about {
-      font-family: 'Varela Round', Calibri, serif;
-      font-weight: 400;
-      color: rgb(164, 172, 196);
-      font-size: 1.5em;
-      margin: 20px;
-    }
+  .about {
+    font-family: 'Varela Round', Calibri, serif;
+    font-weight: 400;
+    color: rgb(164, 172, 196);
+    font-size: 1.5em;
+    margin: 20px;
+  }
 
-    .icons {
-      width: 234px;
-      display: flex;
-      justify-content: space-around;
+  .icons {
+    width: 234px;
+    display: flex;
+    justify-content: space-around;
 
-      .icon {
-        height: 26px;
-        width: 26px;
-        transition: 400ms;
+    .icon {
+      height: 26px;
+      width: 26px;
+      transition: 400ms;
 
-        &:hover {
-          transform: scale(1.5);
-        }
+      &:hover {
+        transform: scale(1.5);
       }
     }
   }

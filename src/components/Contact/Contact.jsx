@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Contacts.module.scss'
+import styles from './Contact.module.scss'
 
-function Contacts() {
+function Contact() {
     return (
         <div className={styles.page}>
             <div className={styles.titleBlock}>
@@ -21,4 +21,4 @@ function Contacts() {
     );
 }
 
-export default Contacts;
+export default Contact;

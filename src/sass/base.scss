@@ -1,16 +1,39 @@
 @mixin page {
+  box-sizing: border-box;
   height: 100vh;
-  //width: 1116px;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 265px;
-  //margin-right: auto;
-  //margin-left: auto;
-  background-color: #10121b;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 0;
+  padding-right: 15px;
+  padding-left: 265px;
+  .titleBlock {
+    position: relative;
+
+    .title {
+      @include greeting;
+      text-transform: uppercase;
+      position: relative;
+      margin: .5rem;
+      z-index: 2;
+    }
+
+    .titleShadow {
+      @include greeting;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      text-transform: uppercase;
+      font-size: 6rem;
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(25, 29, 43, .44);
+      z-index: 1;
+      transform: translateX(10%) translateY(-106%);
+      white-space: nowrap;
+      margin: .5rem;
+    }
+  }
 }
 
 @mixin greeting {
@@ -22,37 +45,7 @@
   margin-bottom: 20px;
 }
 
-@mixin titleBlock {
-  position: relative;
-  //display: block;
-  .title {
-    @include greeting;
-    text-transform: uppercase;
-    position: relative;
-    margin: .5rem;
-    z-index: 2;
-  }
-  .titleShadow {
-    @include greeting;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    text-transform: uppercase;
-    font-size: 6rem;
-    line-height: 1;
-    font-weight: 900;
-    color: rgba(25, 29, 43, .44);
-    //display: inline-block;
-    z-index: 1;
-    transform: translateX(10%) translateY(-106%);
-    //-webkit-user-select: none;
-    //-moz-user-select: none;
-    //-ms-user-select: none;
-    //user-select: none;
-    white-space: nowrap;
-    margin: .5rem;
-  }
-}
+
 
 
 
