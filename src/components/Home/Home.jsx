@@ -7,11 +7,11 @@ import gmailIcon from '../../assets/images/gmail.png'
 
 function Home() {
     return (
-        <div className={styles.home}>
+        <div className={styles.page}>
             <h1 className={styles.greeting}>
                 Hi, I am <span className={styles.name}>Vladimir Khimichenko</span>
             </h1>
-            <span className={styles.aboutMe}>
+            <span className={styles.about}>
                   I am a frontend developer
             </span>
             <div className={styles.icons}>

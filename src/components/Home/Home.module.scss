@@ -3,23 +3,19 @@
 * {
   box-sizing: border-box;
 
-  .home {
+  .page {
    @include page;
+    align-items: center;
 
     .greeting {
-      font-weight: 700;
-      font-size: 2.4857rem;
-      line-height: 3.4rem;
-      font-family: 'Varela Round', Calibri, serif;
-      color: #fff;
-      margin: 20px;
+     @include greeting;
 
       .name {
         color: #037fff;
       }
     }
 
-    .aboutMe {
+    .about {
       font-family: 'Varela Round', Calibri, serif;
       font-weight: 400;
       color: rgb(164, 172, 196);

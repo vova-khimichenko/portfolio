@@ -1,0 +1,23 @@
+@import "src/sass/base";
+
+* {
+  box-sizing: border-box;
+
+  .page {
+    @include page;
+
+    .titleBlock {
+      @include titleBlock;
+    }
+  }
+}
+
+
+//.skills {
+//  border: 2px white dashed;
+//  /*min-height: 55vh;*/
+//  width: 100%;
+//  display: flex;
+//  flex-flow: row wrap;
+//  justify-content: space-between;
+//}
