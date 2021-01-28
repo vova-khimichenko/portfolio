@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Home.module.css'
+import styles from './Home.module.scss'
 import githubIcon from '../../assets/images/github.svg'
 import linkedinIcon from '../../assets/images/linkedin.svg'
 import telegramIcon from '../../assets/images/telegram.png'
