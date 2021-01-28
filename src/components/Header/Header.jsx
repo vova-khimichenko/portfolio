@@ -12,8 +12,8 @@ function Header() {
             <nav className={styles.navLinks}>
                 <a href={'/home'} className={styles.link}>Home</a>
                 <a href={'/skills'} className={styles.link}>Skills</a>
-                <a href={'/projects'} className={styles.link}>Projects</a>
-                <a href={'/contacts'} className={styles.link}>Contacts</a>
+                <a href={'/projects'} className={styles.link}>Portfolios</a>
+                <a href={'/contacts'} className={styles.link}>Contact</a>
             </nav>
             <div className={styles.copyright}>
                 © {year} <span className={styles.userName}>vovkahimik</span>

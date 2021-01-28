@@ -6,7 +6,7 @@ function Skills() {
     return (
         <div className={styles.page}>
             <div className={styles.titleBlock}>
-                <h2 className={styles.title}>My skills </h2>
+                <h2 className={styles.title}>My skills</h2>
                 <span className={styles.titleShadow}>My skills</span>
             </div>
 

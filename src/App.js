@@ -3,7 +3,7 @@ import styles from './App.module.css';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Portfolios/Portfolios";
 import Contacts from "./components/Contacts/Contacts";
 import {BrowserRouter, Route} from "react-router-dom";
 
