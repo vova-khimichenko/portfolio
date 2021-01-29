@@ -1,0 +1,15 @@
+@import "src/sass/base";
+
+.page {
+  @include page;
+}
+
+
+//.skills {
+//  border: 2px white dashed;
+//  /*min-height: 55vh;*/
+//  width: 100%;
+//  display: flex;
+//  flex-flow: row wrap;
+//  justify-content: space-between;
+//}
