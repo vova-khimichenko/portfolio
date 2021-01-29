@@ -11,7 +11,6 @@ function App() {
     return (
         <BrowserRouter>
             <div className={styles.app}>
-                <Header/>
                 <div className={styles.verticalLines}>
                     <span className={styles.line}> </span>
                     <span className={styles.line}> </span>
@@ -20,12 +19,13 @@ function App() {
                     <span className={styles.line}> </span>
                 </div>
                 {/*<div className={styles.pageWrapper}>*/}
-                {/*    <Route path='/portfolio' component={Home}/>*/}
-                {/*    <Route path='/home' component={Home}/>*/}
+                <Route path='/portfolio' component={Home}/>
+                <Route path='/home' component={Home}/>
                 {/*    <Route path='/skills' component={Skills}/>*/}
                 {/*    <Route path='/projects' component={Projects}/>*/}
                 {/*    <Route path='/contacts' component={Contact}/>*/}
                 {/*</div>*/}
+                <Header/>
             </div>
         </BrowserRouter>
     );
