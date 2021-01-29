@@ -14,10 +14,10 @@ function App() {
                 <Header/>
                 <div className={styles.verticalLines}>
                     <span className={styles.line}> </span>
-                    <span className={styles.line}></span>
-                    <span className={styles.line}></span>
-                    <span className={styles.line}></span>
-                    <span className={styles.line}></span>
+                    <span className={styles.line}> </span>
+                    <span className={styles.line}> </span>
+                    <span className={styles.line}> </span>
+                    <span className={styles.line}> </span>
                 </div>
                 {/*<div className={styles.pageWrapper}>*/}
                 {/*    <Route path='/portfolio' component={Home}/>*/}
