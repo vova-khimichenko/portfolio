@@ -1,15 +1,11 @@
 import React from 'react';
-import styles from './Skill.module.css'
+import styles from './Skill.module.scss'
 
-function Skill() {
+function Skill(props) {
     return (
         <div className={styles.skillContainer}>
-            <div className={styles.iconSkill}></div>
-            <h3>React</h3>
-            <span>в консоли переходим в папку, в которой будет проект (d: - перейти на диск, cd путь к папке - перейти
-                в папку, cd .. - выйти из папки (подняться на уровень выше))Копируем команду npx create-react-app my-app
-                и вместо my-app  пишем название нашего проекта
-            </span>
+            <h6 className={styles.title}>{props.title}</h6>
+            <span className={styles.content}>{props.content}</span>
         </div>
     );
 }

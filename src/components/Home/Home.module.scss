@@ -3,6 +3,7 @@
 .page {
   @include page;
   align-items: center;
+  justify-content: center;
 
   .greeting {
     @include greeting;
@@ -15,8 +16,8 @@
   .about {
     font-family: 'Varela Round', Calibri, serif;
     font-weight: 400;
-    color: rgb(164, 172, 196);
     font-size: 1.5em;
+    color: rgb(164, 172, 196);
     margin: 20px;
   }
 

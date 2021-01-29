@@ -18,13 +18,11 @@ function App() {
                     <span className={styles.line}> </span>
                     <span className={styles.line}> </span>
                 </div>
-                {/*<div className={styles.pageWrapper}>*/}
                 <Route path='/portfolio' component={Home}/>
                 <Route path='/home' component={Home}/>
-                {/*    <Route path='/skills' component={Skills}/>*/}
-                {/*    <Route path='/projects' component={Projects}/>*/}
-                {/*    <Route path='/contacts' component={Contact}/>*/}
-                {/*</div>*/}
+                <Route path='/skills' component={Skills}/>
+                <Route path='/projects' component={Projects}/>
+                <Route path='/contacts' component={Contact}/>
                 <Header/>
             </div>
         </BrowserRouter>

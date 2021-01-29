@@ -1,10 +1,32 @@
+$fontFamily: 'Varela Round', Calibri, serif;
+
+@mixin greeting {
+  font-family: $fontFamily;
+  font-weight: 700;
+  font-size: 2.4857rem;
+  line-height: 3.4rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@mixin pseudo {
+  content: "";
+  position: absolute;
+  left: 13px;
+  bottom: 0;
+  height: 5px;
+  width: 100px;
+  border-radius: 100px;
+  background: rgba(3, 127, 255, .3);
+}
+
 @mixin page {
   box-sizing: border-box;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding-right: 15px;
   padding-left: 265px;
   position: absolute;
@@ -34,21 +56,16 @@
       white-space: nowrap;
       margin: .5rem;
     }
+
+    &:before {
+      @include pseudo;
+    }
+
+    &:after {
+      @include pseudo;
+      width: 35px;
+      background: #037fff;
+    }
   }
 }
-
-@mixin greeting {
-  font-weight: 700;
-  font-size: 2.4857rem;
-  line-height: 3.4rem;
-  font-family: 'Varela Round', Calibri, serif;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-
-
-
-
-
 

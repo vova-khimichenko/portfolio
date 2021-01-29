@@ -2,14 +2,14 @@
 
 .page {
   @include page;
+  padding-left: 250px;
+  padding-right: 0;
+
+  .skills {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 53px 0;
+  }
 }
-
-
-//.skills {
-//  border: 2px white dashed;
-//  /*min-height: 55vh;*/
-//  width: 100%;
-//  display: flex;
-//  flex-flow: row wrap;
-//  justify-content: space-between;
-//}
