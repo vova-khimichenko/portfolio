@@ -11,6 +11,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className={styles.app}>
+                <Header/>
                 <div className={styles.verticalLines}>
                     <span className={styles.line}> </span>
                     <span className={styles.line}> </span>
@@ -23,7 +24,6 @@ function App() {
                 <Route path='/skills' component={Skills}/>
                 <Route path='/projects' component={Projects}/>
                 <Route path='/contacts' component={Contact}/>
-                <Header/>
             </div>
         </BrowserRouter>
     );

@@ -1,12 +1,13 @@
-$fontFamily: 'Varela Round', Calibri, serif;
+$valeraFamily: 'Varela Round', Calibri, serif;
 
 @mixin greeting {
-  font-family: $fontFamily;
+  font-family: $valeraFamily;
   font-weight: 700;
   font-size: 2.4857rem;
   line-height: 3.4rem;
   color: #fff;
   margin-bottom: 20px;
+
 }
 
 @mixin pseudo {
@@ -22,16 +23,17 @@ $fontFamily: 'Varela Round', Calibri, serif;
 
 @mixin page {
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-right: 15px;
-  padding-left: 265px;
-  position: absolute;
+  padding: 15px;
+  font-family: $valeraFamily;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: rgb(164, 172, 196);
   .titleBlock {
-    position: relative;
 
     .title {
       @include greeting;

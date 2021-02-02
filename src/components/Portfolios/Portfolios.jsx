@@ -9,10 +9,10 @@ function Portfolios() {
                 <h2 className={styles.title}>Portfolios</h2>
                 <span className={styles.titleShadow}>Portfolios</span>
             </div>
-            {/*<div className={styles.projects}>*/}
-            {/*    <Project/>*/}
-            {/*    <Project/>*/}
-            {/*</div>*/}
+            <div className={styles.projects}>
+                <Project/>
+                <Project/>
+            </div>
         </div>
     );
 }

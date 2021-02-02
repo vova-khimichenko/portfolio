@@ -1,16 +1,16 @@
 @import "src/sass/base";
+*{
+  box-sizing: border-box;
 
+}
 .skillContainer {
-  //border: white dashed 1px;
+  border: #037fff dashed 1px;
   width: 20%;
-  min-height: 55vh;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  //align-items: center;
-  //text-align: center;
   padding: 15px;
-  //margin: 10px;
 
   .title {
     color: #fff;
@@ -22,27 +22,22 @@
   }
 
   .backgroundImage {
-    height: 40vh;
-    width: 40px;
-    //background-image: url("src/assets/images/bag.png");
+    height: 100%;
+    width: 100%;
+    background-image: url('../../../assets/images/bag.png');
+    //background-image: url("https://svgsilh.com/svg/576443-2196f3.svg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 0.1;
 
-    .content {
-      font-family: $fontFamily;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.8rem;
-      color: #a4acc4;
-    }
   }
-}
-
-.iconSkill {
-  width: 80px;
-  height: 80px;
-  background-color: #3f2c2f59;
+  .content {
+    height: 80%;
+    width: 10%;
+    font-family: $valeraFamily;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #a4acc4;
+  }
 }

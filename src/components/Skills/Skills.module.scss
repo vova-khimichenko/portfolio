@@ -6,10 +6,10 @@
   padding-right: 0;
 
   .skills {
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 53px 0;
+    //margin: 53px 0;
   }
 }
