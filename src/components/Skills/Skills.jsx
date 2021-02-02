@@ -28,7 +28,7 @@ function Skills() {
         <div className={styles.page}>
             <div className={styles.titleBlock}>
                 <h2 className={styles.title}>My skills</h2>
-                <span className={styles.titleShadow}>My skills</span>
+                {/*<span className={styles.titleShadow}>My skills</span>*/}
             </div>
             <div className={styles.skills}>
                 {

@@ -2,14 +2,10 @@
 
 .page {
   @include page;
-  padding-left: 250px;
-  padding-right: 0;
 
   .skills {
-    min-height: 50vh;
+    //min-height: 50vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    //margin: 53px 0;
   }
 }
