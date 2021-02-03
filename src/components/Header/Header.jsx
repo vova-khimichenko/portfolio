@@ -9,7 +9,7 @@ function Header() {
             <div className={styles.photoBlock}>
                 <img className={styles.photoAva} src={photoAva} alt={'photoAva'}/>
             </div>
-            <nav className={styles.navLinks}>
+                <nav className={styles.navLinks}>
                 <a href={'/home'} className={styles.link}>Home</a>
                 <a href={'/skills'} className={styles.link}>Skills</a>
                 <a href={'/projects'} className={styles.link}>Portfolios</a>

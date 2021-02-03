@@ -18,12 +18,12 @@ function App() {
                     <span className={styles.line}> </span>
                     <span className={styles.line}> </span>
                 </div>
-                <nav className={styles.header}>
-                    {/*<button className={styles.headerToggler}>*/}
-                        <i className="lni-close size-md "></i>
-                    {/*</button>*/}
+                <div className={styles.headerBlock}>
+                    <button className={styles.headerToggler} disabled>
+                        {/*<i className="lni-close size-md "></i>*/}
+                    </button>
                     <Header/>
-                </nav>
+                </div>
                 <Route path='/portfolio' component={Home}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/skills' component={Skills}/>

@@ -26,9 +26,10 @@
         width: 200px;
         border-radius: 1000px;
         border: 7px solid #2e344e;
-        //overflow: hidden;
-        //display: inline-block;
-        //vertical-align: middle;
+        @media only screen and (max-width: 1199px) {
+          height: 150px;
+          width: 150px;
+        }
       }
     }
 
@@ -38,16 +39,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       padding: 40px 0;
       border-top: 1px solid #2e344e;
 
       .link {
         color: #a4acc4;
         text-transform: uppercase;
-        font-size: .94rem;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: bolder;
         letter-spacing: 1px;
-        font-weight: 600;
         text-decoration: none;
         height: 20%;
         width: 100%;
