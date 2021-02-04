@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Portfolios/Portfolios";
 import Contact from "./components/Contact/Contact";
-import {BrowserRouter, Route} from "react-router-dom";
+import {HashRouter, Route} from "react-router-dom";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -15,7 +15,7 @@ function App() {
     const toggling = () => setToggle(!toggle)
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className={styles.app}>
                 <div className={styles.verticalLines}>
                     <span className={styles.line}> </span>
@@ -28,15 +28,15 @@ function App() {
                     <button className={styles.headerToggler} onClick={toggling}>
                         <FontAwesomeIcon icon={toggle ? faBars : faTimes} size="xs"/>
                     </button>
-                    <Header/>
+                    <Header toggling={toggling}/>
                 </div>
-                <Route path='/portfolio' component={Home}/>
+                <Route exact path='/' component={Home}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/skills' component={Skills}/>
                 <Route path='/projects' component={Projects}/>
                 <Route path='/contacts' component={Contact}/>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

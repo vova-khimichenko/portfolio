@@ -70,7 +70,6 @@
 
   .headerBlockShow {
     @include headerBlock;
-    transform: translateX(0);
     @media only screen and (max-width: 1199px) {
       width: 230px;
       transform: translateX(0);
