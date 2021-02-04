@@ -65,43 +65,15 @@
   }
 
   .headerBlock {
-    position: fixed;
-    left: 0;
-    top: 0;
-    transform: translateX(0);
-    height: 100vh;
-    width: 260px;
-    background: #191d2b;
-    border-right: 7px solid #2e344e;
-    z-index: 10;
-    transition: all .4s ease-out;
-    @media only screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 230px;
-    }
-    @media only screen and (max-width: 767px) {
-      transform: translateX(-100%);
-    }
+    @include headerBlock;
+  }
 
-    .headerToggler {
-      position: absolute;
-      left: 103%;
-      top: 20px;
-      padding: 0;
-      height: 50px;
-      width: 50px;
-      text-align: center;
-      font-size: 1.6rem;
-      background: #191d2b;
-      justify-content: center;
-      align-items: center;
-      display: none;
-      border: 1px solid #2e344e;
-      font-family: Nunito, sans-serif;
-      color: #a4acc4;
-      @media only screen and (max-width: 1199px) {
-        display: flex;
-        height: 44px;
-      }
+  .headerBlockShow {
+    @include headerBlock;
+    transform: translateX(0);
+    @media only screen and (max-width: 1199px) {
+      width: 230px;
+      transform: translateX(0);
     }
   }
 }
