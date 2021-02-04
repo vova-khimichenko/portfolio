@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './App.module.scss';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -6,8 +6,14 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Portfolios/Portfolios";
 import Contact from "./components/Contact/Contact";
 import {BrowserRouter, Route} from "react-router-dom";
+import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function App() {
+
+    const [toggle, setToggle] = useState(true)
+    const toggling = () => setToggle(!toggle)
+
     return (
         <BrowserRouter>
             <div className={styles.app}>
@@ -18,14 +24,17 @@ function App() {
                     <span className={styles.line}> </span>
                     <span className={styles.line}> </span>
                 </div>
-                {/*<div className={styles.pageWrapper}>*/}
+                <div className={toggle ? styles.headerBlock : styles.headerBlockShow}>
+                    <button className={styles.headerToggler} onClick={toggling}>
+                        <FontAwesomeIcon icon={toggle ? faBars : faTimes} size="xs"/>
+                    </button>
+                    <Header/>
+                </div>
                 <Route path='/portfolio' component={Home}/>
                 <Route path='/home' component={Home}/>
-                {/*    <Route path='/skills' component={Skills}/>*/}
-                {/*    <Route path='/projects' component={Projects}/>*/}
-                {/*    <Route path='/contacts' component={Contact}/>*/}
-                {/*</div>*/}
-                <Header/>
+                <Route path='/skills' component={Skills}/>
+                <Route path='/projects' component={Projects}/>
+                <Route path='/contacts' component={Contact}/>
             </div>
         </BrowserRouter>
     );

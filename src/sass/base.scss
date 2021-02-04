@@ -1,54 +1,117 @@
-@mixin page {
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 15px;
-  padding-left: 265px;
-  position: absolute;
-  .titleBlock {
-    position: relative;
+$valeraFamily: 'Varela Round', Calibri, serif;
 
-    .title {
-      @include greeting;
-      text-transform: uppercase;
-      position: relative;
-      margin: .5rem;
-      z-index: 2;
+@mixin headerBlock {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  height: 100vh;
+  width: 260px;
+  background: #191d2b;
+  border-right: 7px solid #2e344e;
+  z-index: 10;
+  transition: all .4s ease-out;
+  @media only screen and (max-width: 1199px) {
+    transform: translateX(-100%);
+  }
+
+  .headerToggler {
+    position: absolute;
+    left: 103%;
+    top: 20px;
+    padding: 0;
+    height: 36px;
+    width: 45px;
+    text-align: center;
+    font-size: 1.6rem;
+    background: #191d2b;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 1px solid #2e344e;
+    font-family: Nunito, sans-serif;
+    color: #a4acc4;
+    @media only screen and (max-width: 1199px) {
+      display: flex;
     }
 
-    .titleShadow {
-      @include greeting;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      text-transform: uppercase;
-      font-size: 6rem;
-      line-height: 1;
-      font-weight: 900;
-      color: rgba(25, 29, 43, .44);
-      z-index: 1;
-      transform: translateX(10%) translateY(-106%);
-      white-space: nowrap;
-      margin: .5rem;
+    &:focus {
+      outline: none;
     }
   }
 }
 
 @mixin greeting {
+  font-family: $valeraFamily;
   font-weight: 700;
   font-size: 2.4857rem;
   line-height: 3.4rem;
-  font-family: 'Varela Round', Calibri, serif;
   color: #fff;
   margin-bottom: 20px;
+
 }
 
+@mixin pseudo {
+  content: "";
+  position: absolute;
+  left: 13px;
+  bottom: 0;
+  height: 5px;
+  width: 100px;
+  border-radius: 100px;
+  background: rgba(3, 127, 255, .3);
+}
+
+@mixin page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  //padding: 15px;
+  font-family: $valeraFamily;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: rgb(164, 172, 196);
+
+  .titleBlock {
+    @include greeting;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 2.37rem;
+    line-height: 3.0857rem;
+
+    .title {
+      .titleShadow {
+        @include greeting;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-transform: uppercase;
+        font-size: 6rem;
+        line-height: 1;
+        font-weight: 900;
+        color: rgba(25, 29, 43, .44);
+        z-index: 1;
+        transform: translateX(10%) translateY(-106%);
+        white-space: nowrap;
+        margin: .5rem;
+      }
+    }
 
 
-
-
-
+    //&:before {
+    //  @include pseudo;
+    //}
+    //
+    //&:after {
+    //  @include pseudo;
+    //  width: 35px;
+    //  background: #037fff;
+    //}
+  }
+}
 

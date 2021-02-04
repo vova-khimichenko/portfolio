@@ -3,21 +3,18 @@
 .page {
   @include page;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 
   .greeting {
     @include greeting;
+    display: block;
+    text-align: center;
+    margin: 20px;
 
     .name {
       color: #037fff;
     }
-  }
-
-  .about {
-    font-family: 'Varela Round', Calibri, serif;
-    font-weight: 400;
-    color: rgb(164, 172, 196);
-    font-size: 1.5em;
-    margin: 20px;
   }
 
   .icons {

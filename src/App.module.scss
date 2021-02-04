@@ -1,22 +1,50 @@
 @import "src/sass/base";
 
+* {
+  box-sizing: border-box;
+}
+
 .app {
   display: flex;
-  justify-content: flex-end;
+  padding-left: 260px;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+  overflow: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: $valeraFamily;
+  color: #a4acc4;
+  font-weight: 400;
+  background: #10121b;
+  @media only screen and (max-width: 767px) {
+    padding-left: 0;
+    font-size: 15px;
+  }
 
   .verticalLines {
-    height: 100vh;
-    width: 1116px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    min-height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
     z-index: -1;
-    position: relative;
-    background-color: #10121b;
+    @media only screen and (max-width: 1199px) {
+      left: 0;
+      width: 100%;
+    }
 
     .line {
-      height: 100vh;
+      //display: inline-block;
       width: 1px;
       background: rgba(46, 52, 78, .3);
       position: absolute;
       top: 0;
+      height: 100%;
+      min-height: 100vh;
 
       &:nth-child(1) {
         left: 20%
@@ -33,6 +61,19 @@
       &:nth-child(4) {
         left: 80%
       }
+    }
+  }
+
+  .headerBlock {
+    @include headerBlock;
+  }
+
+  .headerBlockShow {
+    @include headerBlock;
+    transform: translateX(0);
+    @media only screen and (max-width: 1199px) {
+      width: 230px;
+      transform: translateX(0);
     }
   }
 }
