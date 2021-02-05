@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
-.skillContainer {
+.container {
   width: 20%;
   height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
+  @media only screen and (max-width: 1199px) {
+    padding: 1px
+  };
 
   .title {
     color: #fff;
@@ -19,10 +22,21 @@
     line-height: 1.857rem;
     text-transform: uppercase;
     margin: 9px 5px;
+    @media only screen and (max-width: 1199px) {
+      font-size: .5rem;
+      font-weight: 600;
+      margin: 0;
+    }
 
+    .icon {
+      color: #037fff;
+      @media only screen and (max-width: 1199px) {
+        height: 9px;
+      }
+    }
   }
 
-  .backgroundImage {
+  .skill {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -32,6 +46,9 @@
     //background-image: url("https://svgsilh.com/svg/576443-2196f3.svg");
     background-size: cover;
     background-position: center;
+    @media only screen and (max-width: 1199px) {
+      background-image: unset;
+    }
 
     .content {
       display: flex;
@@ -41,6 +58,12 @@
       line-height: 1.1rem;
       text-align: center;
       margin: 20px 4px;
+      @media only screen and (max-width: 1199px) {
+        padding: 1px;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 1px;
+      }
     }
   }
 }

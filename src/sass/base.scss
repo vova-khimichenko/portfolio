@@ -84,7 +84,9 @@ $nunitoFamily: Nunito, sans-serif;
       text-transform: uppercase;
       font-size: 2.57rem;
       line-height: 3.2857rem;
-
+      @media only screen and (max-width: 1199px) {
+        font-size: 2rem;
+      }
       //&:before {
       //  @include pseudo;
       //}
@@ -111,7 +113,9 @@ $nunitoFamily: Nunito, sans-serif;
       transform: translateX(10%) translateY(-106%);
       white-space: nowrap;
       margin: .5rem;
+      @media only screen and (max-width: 1199px) {
+        font-size: 4rem;
+      }
     }
   }
 }
-

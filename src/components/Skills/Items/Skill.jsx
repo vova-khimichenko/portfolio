@@ -5,12 +5,11 @@ import {faTags} from "@fortawesome/free-solid-svg-icons";
 
 function Skill(props) {
     return (
-        <div className={styles.skillContainer}>
-            <h6 className={styles.title}>{props.title} <FontAwesomeIcon style={{color:'#037fff'}} icon={faTags}/></h6>
-            <div className={styles.backgroundImage}>
-                <div className={styles.content}>
-                    {props.content}
-                </div>
+        <div className={styles.container}>
+            <h6 className={styles.title}>{props.title}
+                <FontAwesomeIcon className={styles.icon} icon={faTags}/></h6>
+            <div className={styles.skill}>
+                <span className={styles.content}>{props.content}</span>
             </div>
         </div>
     );
