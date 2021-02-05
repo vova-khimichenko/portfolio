@@ -6,9 +6,9 @@ function Skill(props) {
         <div className={styles.skillContainer}>
             <h6 className={styles.title}>{props.title}</h6>
             <div className={styles.backgroundImage}>
-                <span className={styles.content}>
+                <div className={styles.content}>
                     {props.content}
-                </span>
+                </div>
             </div>
         </div>
     );

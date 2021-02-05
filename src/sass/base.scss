@@ -49,7 +49,6 @@ $nunitoFamily: Nunito, sans-serif;
   line-height: 3.4rem;
   color: #fff;
   margin-bottom: 20px;
-
 }
 
 @mixin pseudo {
@@ -69,13 +68,14 @@ $nunitoFamily: Nunito, sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: $valeraFamily;
   font-weight: 400;
   font-size: 1.5em;
   color: rgb(164, 172, 196);
   .titleBlock {
     position: relative;
-    margin: 40px;
+    margin: 60px 15px;
 
     .title {
       @include greeting;
@@ -85,16 +85,16 @@ $nunitoFamily: Nunito, sans-serif;
       font-size: 2.57rem;
       line-height: 3.2857rem;
 
-      &:before {
-        @include pseudo;
-      }
-
-      &:after {
-        @include pseudo;
-        left: 218px;
-        width: 55px;
-        background: #037fff;
-      }
+      //&:before {
+      //  @include pseudo;
+      //}
+      //
+      //&:after {
+      //  @include pseudo;
+      //  left: 218px;
+      //  width: 55px;
+      //  background: #037fff;
+      //}
     }
 
     .titleShadow {
