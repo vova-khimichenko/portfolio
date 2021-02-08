@@ -3,7 +3,7 @@ import styles from './Project.module.css'
 
 function Project() {
     return (
-        <div className={styles.projectContainer}>
+        <div className={styles.container}>
             <div className={styles.backgroundImage}>
                 <button className={styles.button}
                         type="button">Смотреть

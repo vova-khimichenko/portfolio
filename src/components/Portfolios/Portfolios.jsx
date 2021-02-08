@@ -12,6 +12,8 @@ function Portfolios() {
             <div className={styles.projects}>
                 <Project/>
                 <Project/>
+                <Project/>
+                <Project/>
             </div>
         </div>
     );

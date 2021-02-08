@@ -5,14 +5,15 @@
 }
 
 .container {
+  height: 61vh;
   width: 20%;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
-  @media only screen and (max-width: 1199px) {
-    padding: 1px
+  @media only screen and (max-width: 1124px) {
+    width: 320px;
+    height: 275px;
   };
 
   .title {
@@ -22,47 +23,34 @@
     line-height: 1.857rem;
     text-transform: uppercase;
     margin: 9px 5px;
-    @media only screen and (max-width: 1199px) {
-      font-size: .5rem;
-      font-weight: 600;
-      margin: 0;
-    }
 
     .icon {
       color: #037fff;
-      @media only screen and (max-width: 1199px) {
-        height: 9px;
-      }
     }
   }
 
   .skill {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
-    background-image: url('../../../assets/images/bag.png');
-    //background-image: url("https://svgsilh.com/svg/576443-2196f3.svg");
+    background-image: url('../../../assets/images/bagUp.png');
     background-size: cover;
     background-position: center;
-    @media only screen and (max-width: 1199px) {
-      background-image: unset;
+    @media only screen and (max-width: 1124px) {
+      background-image: url('../../../assets/images/bagDown.png');
+
     }
 
     .content {
       display: flex;
-      padding: 10px;
+      padding: 10px 19px 44px 20px;
       font-size: 18px;
       font-weight: 400;
       line-height: 1.1rem;
       text-align: center;
-      margin: 20px 4px;
-      @media only screen and (max-width: 1199px) {
-        padding: 1px;
-        font-size: 12px;
-        font-weight: 400;
-        margin: 1px;
+      @media only screen and (max-width: 1124px) {
+        padding: 10px 43px 21px 23px;
       }
     }
   }

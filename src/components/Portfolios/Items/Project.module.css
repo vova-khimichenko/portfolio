@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.projectContainer {
+.container {
     /*border: 2px white dashed;*/
     /*height: 55vh;*/
     width: 450px;
@@ -14,15 +14,15 @@
 }
 
 .backgroundImage {
-    height: 40vh;
-    width: 100%;
-    /*background-color: rgba(232, 151, 162, 0.35);*/
-    background-image: url("https://w7.pngwing.com/pngs/884/72/png-transparent-hamster-drawing-others-miscellaneous-mammal-cat-like-mammal.png");
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 40vh;
+    width: 100%;
+    background-image: url("https://w7.pngwing.com/pngs/884/72/png-transparent-hamster-drawing-others-miscellaneous-mammal-cat-like-mammal.png");
+    background-size: cover;
+    background-position: center;
+
 }
 
 .button {
