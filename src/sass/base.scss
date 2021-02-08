@@ -1,4 +1,5 @@
 $valeraFamily: 'Varela Round', Calibri, serif;
+$nunitoFamily: 'Nunito Sans', sans-serif;
 
 @mixin headerBlock {
   position: fixed;
@@ -29,7 +30,7 @@ $valeraFamily: 'Varela Round', Calibri, serif;
     align-items: center;
     display: none;
     border: 1px solid #2e344e;
-    font-family: Nunito, sans-serif;
+    font-family: $nunitoFamily;
     color: #a4acc4;
     @media only screen and (max-width: 1199px) {
       display: flex;
@@ -48,16 +49,15 @@ $valeraFamily: 'Varela Round', Calibri, serif;
   line-height: 3.4rem;
   color: #fff;
   margin-bottom: 20px;
-
 }
 
 @mixin pseudo {
   content: "";
   position: absolute;
-  left: 13px;
+  left: 62px;
   bottom: 0;
   height: 5px;
-  width: 100px;
+  width: 212px;
   border-radius: 100px;
   background: rgba(3, 127, 255, .3);
 }
@@ -68,50 +68,58 @@ $valeraFamily: 'Varela Round', Calibri, serif;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  //padding: 15px;
+  justify-content: space-between;
   font-family: $valeraFamily;
   font-weight: 400;
   font-size: 1.5em;
   color: rgb(164, 172, 196);
-
   .titleBlock {
-    @include greeting;
-    font-weight: 700;
     position: relative;
-    padding-bottom: 15px;
-    text-transform: uppercase;
-    font-size: 2.37rem;
-    line-height: 3.0857rem;
-
-    .title {
-      .titleShadow {
-        @include greeting;
-        position: absolute;
-        left: 0;
-        top: 0;
-        text-transform: uppercase;
-        font-size: 6rem;
-        line-height: 1;
-        font-weight: 900;
-        color: rgba(25, 29, 43, .44);
-        z-index: 1;
-        transform: translateX(10%) translateY(-106%);
-        white-space: nowrap;
-        margin: .5rem;
-      }
+    margin: 80px 15px 0;
+    @media only screen and (max-width: 1124px) {
+      margin: 40px 15px 0;
     }
 
+    .title {
+      @include greeting;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 2.57rem;
+      line-height: 3.2857rem;
+      @media only screen and (max-width: 1124px) {
+        font-size: 2rem;
+      }
+      //&:before {
+      //  @include pseudo;
+      //}
+      //
+      //&:after {
+      //  @include pseudo;
+      //  left: 218px;
+      //  width: 55px;
+      //  background: #037fff;
+      //}
+    }
 
-    //&:before {
-    //  @include pseudo;
-    //}
-    //
-    //&:after {
-    //  @include pseudo;
-    //  width: 35px;
-    //  background: #037fff;
-    //}
+    .titleShadow {
+      @include greeting;
+      position: absolute;
+      left: 0;
+      top: 85%;
+      text-transform: uppercase;
+      font-size: 5rem;
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(25, 29, 43, .7);
+      z-index: -1;
+      transform: translateX(9%) translateY(-144%);
+      white-space: nowrap;
+      margin: .5rem;
+      @media only screen and (max-width: 1124px) {
+        font-size: 3rem;
+        transform: translateX(12%) translateY(-180%);
+      }
+    }
   }
 }
-

@@ -4,8 +4,9 @@
   @include page;
 
   .skills {
-    //min-height: 50vh;
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
+    //justify-content: space-between;
   }
 }
