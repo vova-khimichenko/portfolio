@@ -77,10 +77,10 @@
           transition: all .4s ease-out;
         }
 
-        &:active::selection {
-          color: #fff;
-          background: #037fff;
-        }
+        //&:active::selection {
+        //  color: #fff;
+        //  background: #037fff;
+        //}
       }
     }
 

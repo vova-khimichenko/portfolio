@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './Projects.module.scss'
 import Project from "./Items/Project";
+import {faCarSide} from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
     {
         title: 'tracking-fe',
-        description: 'tracking and reporting of vehicle movement'
-    },  {
+        description: 'tracking and reporting of vehicle movement',
+        icon: faCarSide,
+    }, {
         title: 'title',
         description: 'description'
-    },{
+    }, {
         title: 'title',
         description: 'description'
     }, {
@@ -27,7 +29,9 @@ function Projects() {
             </div>
             <div className={styles.items}>
                 {
-                    projects.map(project => <Project title={project.title} description={project.description}/>)
+                    projects.map(project => <Project title={project.title}
+                                                     description={project.description}
+                                                     icon={project.icon}/>)
                 }
             </div>
         </div>

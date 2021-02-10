@@ -4,9 +4,19 @@
   @include itemContainer;
 
   .item {
-    background-image: url('../../../assets/images/bagUp.png');
-    @media only screen and (max-width: 1124px) {
-      background-image: url('../../../assets/images/bagDown.png');
+    position: relative;
+    .itemBg {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      opacity: .1;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../../../assets/images/bagUp.png');
+      transition: all 1s cubic-bezier(.01, .57, .68, 1.05) 0s;
+      @media only screen and (max-width: 1124px) {
+        background-image: url('../../../assets/images/bagDown.png');
+      }
     }
 
     .content {

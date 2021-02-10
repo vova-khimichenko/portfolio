@@ -10,9 +10,6 @@
   position: relative;
   min-height: 100vh;
   z-index: 1;
-  overflow: hidden !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   line-height: 1.8rem;
   font-family: $valeraFamily;
@@ -37,7 +34,6 @@
     }
 
     .line {
-      //display: inline-block;
       width: 1px;
       background: rgba(46, 52, 78, .3);
       position: absolute;
