@@ -2,15 +2,21 @@ import React from 'react';
 import styles from './Projects.module.scss'
 import Project from "./Items/Project";
 import {faCarSide} from "@fortawesome/free-solid-svg-icons";
+import {faListOl} from "@fortawesome/free-solid-svg-icons";
+import trackingBg from '../../assets/images/tracking.PNG';
+import toDo from '../../assets/images/todo.PNG';
 
 const projects = [
     {
-        title: 'tracking-fe',
-        description: 'tracking and reporting of vehicle movement',
+        title: 'tracking',
+        description: 'Tracking and reporting of vehicle movement.',
         icon: faCarSide,
+        imagePath: trackingBg
     }, {
-        title: 'title',
-        description: 'description'
+        title: 'to do',
+        description: 'To do list using TypeScript.',
+        icon: faListOl,
+        imagePath: toDo
     }, {
         title: 'title',
         description: 'description'
@@ -31,7 +37,8 @@ function Projects() {
                 {
                     projects.map(project => <Project title={project.title}
                                                      description={project.description}
-                                                     icon={project.icon}/>)
+                                                     icon={project.icon}
+                                                     imagePath={project.imagePath}/>)
                 }
             </div>
         </div>

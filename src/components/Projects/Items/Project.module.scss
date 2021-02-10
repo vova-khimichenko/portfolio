@@ -6,9 +6,20 @@
   margin: 10px 0;
 
   .item {
-    border-radius: 5px;
-    background-image: url('../../../assets/images/tracking.PNG');
     position: relative;
+    height: 230px;
+    width: 100%;
+
+    .itemBg {
+      position: absolute;
+      height: 100%;
+      border-radius: 5px;
+      top: 0;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      transition: all 1s cubic-bezier(.01, .57, .68, 1.05) 0s;
+    }
 
     &:before {
       content: "";
