@@ -1,0 +1,13 @@
+@import "src/sass/base";
+
+.page {
+  @include page;
+
+  .titleBlock {
+    margin: 80px 15px 55px;
+  }
+
+  .items {
+    justify-content: space-between;
+  }
+}

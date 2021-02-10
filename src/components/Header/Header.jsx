@@ -15,7 +15,7 @@ function Header(props) {
             <nav className={styles.navLinks} onClick={props.toggling}>
                 <NavLink to={'/home'} className={styles.link}>Home</NavLink>
                 <NavLink to={'/skills'} className={styles.link}>Skills</NavLink>
-                <NavLink to={'/projects'} className={styles.link}>Portfolios</NavLink>
+                <NavLink to={'/projects'} className={styles.link}>Projects</NavLink>
                 <NavLink to={'/contacts'} className={styles.link}>Contact</NavLink>
             </nav>
             <div className={styles.copyright}>

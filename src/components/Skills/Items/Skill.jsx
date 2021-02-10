@@ -6,8 +6,8 @@ import {faTags} from "@fortawesome/free-solid-svg-icons";
 function Skill(props) {
     return (
         <div className={styles.container}>
-            <h6 className={styles.title}>{props.title} <FontAwesomeIcon className={styles.icon} icon={faTags}/></h6>
-            <div className={styles.skill}>
+            <h4 className={styles.title}>{props.title} <FontAwesomeIcon className={styles.icon} icon={faTags}/></h4>
+            <div className={styles.item}>
                 <span className={styles.content}>{props.content}</span>
             </div>
         </div>

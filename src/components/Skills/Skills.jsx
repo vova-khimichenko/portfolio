@@ -30,7 +30,7 @@ function Skills() {
                 <h2 className={styles.title}>My skills</h2>
                 <span className={styles.titleShadow}>My skills</span>
             </div>
-            <div className={styles.skills}>
+            <div className={styles.items}>
                 {
                     skills.map(skill => <Skill title={skill.title} content={skill.content}/>)
                 }

@@ -2,11 +2,4 @@
 
 .page {
   @include page;
-
-  .skills {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    //justify-content: space-between;
-  }
 }
