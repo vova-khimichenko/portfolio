@@ -10,6 +10,7 @@ function Project(props) {
     return (
         <div className={styles.container}>
             {/*<div className={styles.backgroundImage}>*/}
+
             {/*    <button className={styles.button}*/}
             {/*            type="button">Смотреть*/}
             {/*    </button>*/}

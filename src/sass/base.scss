@@ -141,16 +141,13 @@ $nunitoFamily: 'Nunito Sans', sans-serif;
 }
 
 @mixin itemContainer {
-  min-height: 61vh;
-  width: 20%;
+  min-height: 59vh;
   display: flex;
   flex-direction: column;
   padding: 19px;
   @media only screen and (max-width: 1124px) {
-    min-height: 275px;
-    width: 320px;
-  };
-
+    min-height: 39vh;
+  }
   .title {
     color: #fff;
     font-size: 1.14rem;
@@ -165,9 +162,10 @@ $nunitoFamily: 'Nunito Sans', sans-serif;
   }
 
   .item {
+    position: relative;
     display: flex;
     align-items: flex-end;
     height: 100%;
-    width: 100%;
+    width: 96%;
   }
 }

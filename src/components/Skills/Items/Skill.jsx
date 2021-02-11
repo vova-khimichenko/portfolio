@@ -12,8 +12,8 @@ function Skill(props) {
         <div className={styles.container}>
             <h4 className={styles.title}>{props.title} <FontAwesomeIcon className={styles.icon} icon={faTags}/></h4>
             <div className={styles.item}>
-                <span className={styles.content}>{props.content}</span>
                 <div className={styles.itemBg} style={styleBg}> </div>
+                <span className={styles.content}>{props.content}</span>
             </div>
         </div>
     );

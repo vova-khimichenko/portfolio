@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './Projects.module.scss'
 import Project from "./Items/Project";
-import {faCarSide} from "@fortawesome/free-solid-svg-icons";
-import {faListOl} from "@fortawesome/free-solid-svg-icons";
+import {faCarSide, faGamepad, faListOl, faStopwatch20} from "@fortawesome/free-solid-svg-icons";
 import trackingBg from '../../assets/images/tracking.PNG';
 import toDo from '../../assets/images/todo.PNG';
+import counter from '../../assets/images/counter.PNG';
+import duck
+    from '../../assets/images/duck.png';
 
 const projects = [
     {
@@ -18,11 +20,15 @@ const projects = [
         icon: faListOl,
         imagePath: toDo
     }, {
-        title: 'title',
-        description: 'description'
+        title: 'counter',
+        description: 'Double counter using React/Redux.',
+        icon: faStopwatch20,
+        imagePath: counter
     }, {
-        title: 'title',
-        description: 'description'
+        title: 'duck',
+        description: 'Game catch the duck.',
+        icon: faGamepad,
+        imagePath: duck
     },
 ]
 
