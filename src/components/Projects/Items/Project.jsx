@@ -9,18 +9,11 @@ function Project(props) {
 
     return (
         <div className={styles.container}>
-            {/*<div className={styles.backgroundImage}>*/}
-
-            {/*    <button className={styles.button}*/}
-            {/*            type="button">Смотреть*/}
-            {/*    </button>*/}
-            {/*</div>*/}
-            <div className={styles.item}>
+            <a className={styles.item} target="_blank" without rel="noopener noreferrer" href={props.projectPath}>
                 <div className={styles.itemBg}
-                     style={{backgroundImage: `url(${props.imagePath})`, width: styleBg}}> </div>
-            </div>
-            <h4 className={styles.title}>{props.title} <FontAwesomeIcon className={styles.icon} icon={props.icon}
-            /></h4>
+                     style={{backgroundImage: `url(${props.imagePath})`, width: styleBg}}>{}</div>
+            </a>
+            <h4 className={styles.title}>{props.title} <FontAwesomeIcon className={styles.icon} icon={props.icon}/></h4>
             <span className={styles.description}>{props.description}</span>
         </div>
     );

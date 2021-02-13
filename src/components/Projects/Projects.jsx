@@ -16,19 +16,22 @@ const projects = [
         imagePath: trackingBg
     }, {
         title: 'to do',
-        description: 'To do list using TypeScript.',
+        description: 'To do list using TypeScript, Storybook, TDD, API.',
         icon: faListOl,
-        imagePath: toDo
+        imagePath: toDo,
+        projectPath: 'https://vovkahimik.github.io/todolist-ts/'
     }, {
         title: 'counter',
         description: 'Double counter using React/Redux.',
         icon: faStopwatch20,
-        imagePath: counter
+        imagePath: counter,
+        projectPath: 'https://vovkahimik.github.io/counter/'
     }, {
         title: 'duck',
         description: 'Game catch the duck.',
         icon: faGamepad,
-        imagePath: duck
+        imagePath: duck,
+        projectPath: 'https://vovkahimik.github.io/duck/'
     },
 ]
 
@@ -44,7 +47,8 @@ function Projects() {
                     projects.map(project => <Project title={project.title}
                                                      description={project.description}
                                                      icon={project.icon}
-                                                     imagePath={project.imagePath}/>)
+                                                     imagePath={project.imagePath}
+                                                     projectPath={project.projectPath}/>)
                 }
             </div>
         </div>
