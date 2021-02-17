@@ -13,7 +13,8 @@ const projects = [
         title: 'tracking',
         description: 'Tracking and reporting of vehicle movement.',
         icon: faCarSide,
-        imagePath: trackingBg
+        imagePath: trackingBg,
+        projectPath: 'http://trex.by:81'
     }, {
         title: 'to do',
         description: 'To do list using TypeScript, Storybook, TDD, API.',
