@@ -2,28 +2,44 @@
 
 .page {
   @include page;
-}
+  justify-content: unset;
 
-//.tegForm {
-//    background-color: #8f948f;
-//    height: 50%;
-//    width: 60%;
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: space-between;
-//}
-//
-//.tegInput {
-//    height: 15%;
-//}
-//
-//.tegTextarea {
-//    height: 50%;
-//}
-//
-//.button {
-//    background-color: #8f948f;
-//    height: 7%;
-//    font-size: 20px;
-//    color: #8c5a60;
-//}
+  .businessCards {
+    @include businessCards;
+
+    .card {
+      @include card;
+
+      &:nth-child(1) {
+        top: 6px;
+        left: 6px;
+      }
+
+      &:nth-child(2) {
+        top: 12px;
+        left: 12px;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+        left: 18px;
+      }
+
+      &:nth-child(4) {
+        top: 24px;
+        left: 24px;
+      }
+
+      &:nth-child(5) {
+        justify-content: unset;
+
+        padding: 15px;
+        top: 30px;
+        left: 30px;
+        .icon {
+          color: #037fff;
+        }
+      }
+    }
+  }
+}

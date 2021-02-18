@@ -168,3 +168,20 @@ $nunitoFamily: 'Nunito Sans', sans-serif;
     width: 96%;
   }
 }
+
+@mixin businessCards {
+  display: flex;
+  justify-content: center;
+  margin: 90px 15px;
+  background: #001f38;
+  height: 180px;
+  width: 320px;
+  position: relative;
+}
+
+@mixin card {
+  @include businessCards;
+  margin: 0;
+  position: absolute;
+  border: #10121b 1px solid;
+}
