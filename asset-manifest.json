@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d0a424a1.chunk.css",
-    "main.js": "/portfolio/static/js/main.d1f88488.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d1f88488.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.dad20ca5.chunk.js": "/portfolio/static/js/2.dad20ca5.chunk.js",
-    "static/js/2.dad20ca5.chunk.js.map": "/portfolio/static/js/2.dad20ca5.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.f47c540d3f871f8a1d66b9aff0a57134.js": "/portfolio/precache-manifest.f47c540d3f871f8a1d66b9aff0a57134.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.d0a424a1.chunk.css.map": "/portfolio/static/css/main.d0a424a1.chunk.css.map",
-    "static/js/2.dad20ca5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dad20ca5.chunk.js.LICENSE.txt",
-    "static/media/counter.PNG": "/portfolio/static/media/counter.894e4449.PNG",
-    "static/media/duck.png": "/portfolio/static/media/duck.337dbe75.png",
-    "static/media/github.svg": "/portfolio/static/media/github.21d620ef.svg",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.21f9f3c1.svg",
-    "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.430807fe.jpg",
-    "static/media/telegram.png": "/portfolio/static/media/telegram.5261fd64.png",
-    "static/media/todo.PNG": "/portfolio/static/media/todo.528f66fa.PNG",
-    "static/media/tracking.PNG": "/portfolio/static/media/tracking.c445f87e.PNG"
+    "main.css": "/todolist-offline/static/css/main.d0a424a1.chunk.css",
+    "main.js": "/todolist-offline/static/js/main.08760bfd.chunk.js",
+    "main.js.map": "/todolist-offline/static/js/main.08760bfd.chunk.js.map",
+    "runtime-main.js": "/todolist-offline/static/js/runtime-main.8868fab8.js",
+    "runtime-main.js.map": "/todolist-offline/static/js/runtime-main.8868fab8.js.map",
+    "static/js/2.dad20ca5.chunk.js": "/todolist-offline/static/js/2.dad20ca5.chunk.js",
+    "static/js/2.dad20ca5.chunk.js.map": "/todolist-offline/static/js/2.dad20ca5.chunk.js.map",
+    "index.html": "/todolist-offline/index.html",
+    "precache-manifest.fa63f1c9bd2aa1942291adb365c60896.js": "/todolist-offline/precache-manifest.fa63f1c9bd2aa1942291adb365c60896.js",
+    "service-worker.js": "/todolist-offline/service-worker.js",
+    "static/css/main.d0a424a1.chunk.css.map": "/todolist-offline/static/css/main.d0a424a1.chunk.css.map",
+    "static/js/2.dad20ca5.chunk.js.LICENSE.txt": "/todolist-offline/static/js/2.dad20ca5.chunk.js.LICENSE.txt",
+    "static/media/counter.PNG": "/todolist-offline/static/media/counter.894e4449.PNG",
+    "static/media/duck.png": "/todolist-offline/static/media/duck.337dbe75.png",
+    "static/media/github.svg": "/todolist-offline/static/media/github.21d620ef.svg",
+    "static/media/linkedin.svg": "/todolist-offline/static/media/linkedin.21f9f3c1.svg",
+    "static/media/myPhoto.jpg": "/todolist-offline/static/media/myPhoto.430807fe.jpg",
+    "static/media/telegram.png": "/todolist-offline/static/media/telegram.5261fd64.png",
+    "static/media/todo.PNG": "/todolist-offline/static/media/todo.528f66fa.PNG",
+    "static/media/tracking.PNG": "/todolist-offline/static/media/tracking.c445f87e.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
+    "static/js/runtime-main.8868fab8.js",
     "static/js/2.dad20ca5.chunk.js",
     "static/css/main.d0a424a1.chunk.css",
-    "static/js/main.d1f88488.chunk.js"
+    "static/js/main.08760bfd.chunk.js"
   ]
 }
