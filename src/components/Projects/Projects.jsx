@@ -20,7 +20,7 @@ const projects = [
         description: 'To do list using TypeScript, Storybook, TDD, API.',
         icon: faListOl,
         imagePath: toDo,
-        projectPath: 'https://vovkahimik.github.io/todolist-ts/'
+        projectPath: 'https://vovkahimik.github.io/todolist-offline/'
     }, {
         title: 'counter',
         description: 'Double counter using React/Redux.',
