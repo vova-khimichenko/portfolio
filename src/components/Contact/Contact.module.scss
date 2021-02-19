@@ -4,11 +4,14 @@
   @include page;
   justify-content: unset;
 
-  .businessCards {
-    @include businessCards;
+  .cards {
+    @include cards;
 
-    .card {
-      @include card;
+    span {
+      @include cards;
+      margin: 0;
+      position: absolute;
+      border: #10121b 1px solid;
 
       &:nth-child(1) {
         top: 6px;
@@ -31,15 +34,56 @@
       }
 
       &:nth-child(5) {
-        justify-content: unset;
-
+        flex-direction: column;
+        justify-content: space-between;
         padding: 15px;
         top: 30px;
         left: 30px;
-        .icon {
-          color: #037fff;
+
+        .about {
+          display: flex;
+          justify-content: space-around;
+
+          .icons {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+              margin: 0;
+              color: #037fff;
+            }
+
+            h5 {
+              margin: 0;
+              color: #a4acc4;
+            }
+          }
+
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        .phone {
+          display: flex;
+          align-items: center;
+          color: #fff;
+          font-size: 16px;
+
+          a {
+            color: #fff;
+            font-size: 16px;
+            //margin-right: 14px;
+            text-decoration: none;
+
+            &:hover {
+              color: #037fff;
+            }
+          }
         }
       }
     }
   }
 }
+
