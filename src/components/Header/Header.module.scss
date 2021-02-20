@@ -57,15 +57,20 @@
         transition: all .4s ease-out;
         margin: 10px 0;
 
+        &:hover {
+          color: #037fff;
+        }
+
+        &:focus {
+          color: #fff;
+        }
+
         &:before {
           content: "";
           position: absolute;
           width: 0;
           visibility: hidden;
-        }
-
-        &:hover {
-          color: #037fff;
+          z-index: -1;
         }
 
         &:hover:before {
@@ -77,10 +82,13 @@
           transition: all .4s ease-out;
         }
 
-        //&:active::selection {
-        //  color: #fff;
-        //  background: #037fff;
-        //}
+        &:focus:before {
+          left: 2%;
+          height: 150%;
+          width: 96%;
+          visibility: visible;
+          background: rgba(3, 127, 255, 1);
+        }
       }
     }
 

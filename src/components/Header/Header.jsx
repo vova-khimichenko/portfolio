@@ -19,7 +19,7 @@ function Header(props) {
                 <NavLink to={'/contacts'} className={styles.link}>Contact</NavLink>
             </nav>
             <div className={styles.copyright}>
-                © {year} <span className={styles.userName}>vovkahimik</span>
+                © {year} <span className={styles.userName}>made by me</span>
             </div>
         </div>
     )
