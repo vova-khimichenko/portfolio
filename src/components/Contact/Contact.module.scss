@@ -5,82 +5,84 @@
   justify-content: unset;
 
   .cards {
-    @include cards;
+    display: flex;
+    position: fixed;
+    top: 215px;
+    margin: 90px 15px;
+    @media only screen and (max-height: 360px) {
+      top: 30px;
+      left: 265px;
+    }
 
     span {
-      @include cards;
-      margin: 0;
-      position: absolute;
-      border: #10121b 1px solid;
+      @include emptyCard;
 
       &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-child(2) {
         top: 6px;
         left: 6px;
       }
 
-      &:nth-child(2) {
+      &:nth-child(3) {
+        @include contentCard;
         top: 12px;
         left: 12px;
       }
 
-      &:nth-child(3) {
+      &:nth-child(4) {
         top: 18px;
         left: 18px;
-      }
-
-      &:nth-child(4) {
-        top: 24px;
-        left: 24px;
+        @media only screen and (max-width: 375px) {
+          visibility: hidden;
+        }
       }
 
       &:nth-child(5) {
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 15px;
-        top: 30px;
-        left: 30px;
-
-        .about {
-          display: flex;
-          justify-content: space-around;
-
-          .icons {
-            display: flex;
-            flex-direction: column;
-
-            h4 {
-              margin: 0;
-              color: #037fff;
-            }
-
-            h5 {
-              margin: 0;
-              color: #a4acc4;
-            }
-          }
-
-          img {
-            width: 100px;
-            height: 100px;
-          }
+        top: 29px;
+        left: 21px;
+        @media only screen and (max-width: 375px) {
+          visibility: hidden;
         }
+      }
 
-        .phone {
-          display: flex;
-          align-items: center;
-          color: #fff;
-          font-size: 16px;
+      &:nth-child(6) {
+        @include contentCard;
+        @media only screen and (max-width: 375px) {
+          visibility: hidden;
+        }
+      }
 
-          a {
-            color: #fff;
-            font-size: 16px;
-            //margin-right: 14px;
-            text-decoration: none;
+      &:nth-child(7) {
+        @include contentCard;
+        top: 2px;
+        left: 415px;
+        transform: rotate(-45deg);
+        @media only screen and (max-width: 785px) {
+          visibility: hidden;
+        }
+      }
 
-            &:hover {
-              color: #037fff;
-            }
-          }
+      &:nth-child(8) {
+        @include contentCard;
+        top: -179px;
+        left: 515px;
+        transform: rotate(-35deg);
+        @media only screen and (max-width: 890px) {
+          visibility: hidden;
+        }
+      }
+
+      &:nth-child(9) {
+        @include contentCard;
+        top: -151px;
+        left: 697px;
+        transform: rotate(-25deg);
+        @media only screen and (max-width: 1070px) {
+          visibility: hidden;
         }
       }
     }
