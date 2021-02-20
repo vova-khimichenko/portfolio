@@ -169,12 +169,61 @@ $nunitoFamily: 'Nunito Sans', sans-serif;
   }
 }
 
-@mixin cards {
+@mixin emptyCard {
   display: flex;
-  justify-content: center;
-  margin: 90px 15px;
-  background: -webkit-linear-gradient(top, #0F2557 0%, #3778C2 100%);
+  flex-direction: column;
+  justify-content: space-between;
+  background: -webkit-linear-gradient(top, #0f2557, #3778c2);
   height: 180px;
   width: 320px;
-  position: relative;
+  padding: 15px;
+  top: 44px;
+  left: 24px;
+  position: absolute;
+  border: 1px solid #10121b;
+}
+
+@mixin contentCard {
+  .about {
+    display: flex;
+    justify-content: space-around;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+        color: #037fff;
+      }
+
+      h5 {
+        margin: 0;
+        color: #a4acc4;
+      }
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+
+    a {
+      color: #fff;
+      font-size: 16px;
+      //margin-right: 14px;
+      text-decoration: none;
+
+      &:hover {
+        color: #037fff;
+      }
+    }
+  }
 }
