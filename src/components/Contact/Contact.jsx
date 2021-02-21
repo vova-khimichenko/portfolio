@@ -16,7 +16,7 @@ function Contact() {
                     </div>
                     <div className={styles.phone}>
                         <FontAwesomeIcon icon={faMobileAlt} style={{margin: '0 14px'}}/>
-                        <a href={'+375295169670'}>+375-29-516-96-70</a>
+                        <a href={'tel:+375295169670'}>+375-29-516-96-70</a>
                     </div>
                 </span>
 

@@ -9,9 +9,9 @@
     position: fixed;
     top: 215px;
     margin: 90px 15px;
-    @media only screen and (max-height: 360px) {
-      top: 30px;
-      left: 265px;
+    @media only screen and (max-height: 450px) {
+      top: 13px;
+      left: 230px;
     }
 
     span {
@@ -61,7 +61,7 @@
         top: 2px;
         left: 415px;
         transform: rotate(-45deg);
-        @media only screen and (max-width: 785px) {
+        @media screen and (max-width: 785px), screen and (max-height: 450px) {
           visibility: hidden;
         }
       }
@@ -71,7 +71,7 @@
         top: -179px;
         left: 515px;
         transform: rotate(-35deg);
-        @media only screen and (max-width: 890px) {
+        @media only screen and (max-width: 890px), screen and (max-height: 450px) {
           visibility: hidden;
         }
       }
@@ -81,11 +81,12 @@
         top: -151px;
         left: 697px;
         transform: rotate(-25deg);
-        @media only screen and (max-width: 1070px) {
+        @media only screen and (max-width: 1070px), screen and (max-height: 450px) {
           visibility: hidden;
         }
       }
     }
   }
+
 }
 

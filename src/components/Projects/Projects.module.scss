@@ -5,9 +5,8 @@
 
   .titleBlock {
     margin: 80px 15px 55px;
-  }
-
-  .items {
-    justify-content: space-between;
+    @media only screen and (max-width: 1124px) {
+      margin: 40px 15px 0;
+    }
   }
 }
