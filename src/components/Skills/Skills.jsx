@@ -5,19 +5,19 @@ import Skill from "./Items/Skill";
 const skills = [
     {
         title: 'HTML/CSS',
-        content: 'flexbox, css grid, media queries'
+        content: 'flexbox, css grid, css composes, css comb, media queries, sass'
     },
     {
         title: 'Javascript',
-        content: 'es5 / es6, arrow functions, array methods, spread, rest, closures, destructuring, promises, pure ' +
-            'function,this, prototypes, deep copy objects, local storage'
-    },  {
+        content: 'arrow functions, array methods, spread, rest, closures, destructuring, promises, pure function,' +
+            'this, deep copy objects, local storage'
+    }, {
         title: 'REACT',
-        content: 'class and function components, life cycle methods, HOCs, hooks, local state, AJAX, ref, Flux'
-    },  {
+        content: 'class and function components, life cycle methods, HOCs, hooks, local state, ref, flux'
+    }, {
         title: 'REDUX',
-        content: 'store methods, reducer, combine-Reducers, apply-Middleware, redux-thunk'
-    },  {
+        content: 'store methods, reducer, combine-reducers, apply-middleware, redux-thunk'
+    }, {
         title: 'TYPESCRIPT',
         content: 'typing JS objects and functions, react components, redux methods, etc.'
     },
