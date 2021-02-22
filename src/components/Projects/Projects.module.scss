@@ -1,0 +1,12 @@
+@import "src/sass/base";
+
+.page {
+  @include page;
+
+  .titleBlock {
+    margin: 80px 15px 55px;
+    @media only screen and (max-width: 1124px) {
+      margin: 40px 15px 0;
+    }
+  }
+}

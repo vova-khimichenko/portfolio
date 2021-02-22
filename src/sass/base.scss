@@ -1,0 +1,230 @@
+$valeraFamily: 'Varela Round', Calibri, serif;
+$nunitoFamily: 'Nunito Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin headerBlock {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  height: 100vh;
+  width: 260px;
+  background: #191d2b;
+  border-right: 7px solid #2e344e;
+  z-index: 10;
+  transition: all .4s ease-out;
+  @media only screen and (max-width: 1199px) {
+    transform: translateX(-100%);
+  }
+
+  .headerToggler {
+    position: absolute;
+    left: 103%;
+    top: 20px;
+    padding: 0;
+    height: 36px;
+    width: 45px;
+    text-align: center;
+    font-size: 1.6rem;
+    background: #191d2b;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 1px solid #2e344e;
+    font-family: $nunitoFamily;
+    color: #a4acc4;
+    @media only screen and (max-width: 1199px) {
+      display: flex;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@mixin greeting {
+  font-family: $valeraFamily;
+  font-weight: 700;
+  font-size: 2.4857rem;
+  line-height: 3.4rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@mixin pseudo {
+  content: "";
+  position: absolute;
+  left: 62px;
+  bottom: 0;
+  height: 5px;
+  width: 212px;
+  border-radius: 100px;
+  background: rgba(3, 127, 255, .3);
+}
+
+@mixin page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: $valeraFamily;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: rgb(164, 172, 196);
+  .titleBlock {
+    position: relative;
+    margin: 80px 15px 0;
+    @media only screen and (max-width: 1124px) {
+      margin: 40px 15px 0;
+    }
+
+    .title {
+      @include greeting;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 2.57rem;
+      line-height: 3.2857rem;
+      @media only screen and (max-width: 1124px) {
+        font-size: 2rem;
+      }
+      //&:before {
+      //  @include pseudo;
+      //}
+      //
+      //&:after {
+      //  @include pseudo;
+      //  left: 218px;
+      //  width: 55px;
+      //  background: #037fff;
+      //}
+    }
+
+    .titleShadow {
+      @include greeting;
+      position: absolute;
+      left: 0;
+      top: 85%;
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(25, 29, 43, .7);
+      z-index: -1;
+      transform: translateX(8%) translateY(-158%);
+      white-space: nowrap;
+      margin: .5rem;
+      @media only screen and (max-width: 1124px) {
+        font-size: 2.8rem;
+        transform: translateX(6%) translateY(-180%);
+      }
+    }
+  }
+  .items {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+@mixin text {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1rem;
+}
+
+@mixin itemContainer {
+  min-height: 59vh;
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+  @media only screen and (max-width: 1124px) {
+    min-height: 39vh;
+  }
+  .title {
+    color: #fff;
+    font-size: 1.14rem;
+    font-weight: 600;
+    line-height: 1.857rem;
+    text-transform: uppercase;
+    margin: 9px 0;
+
+    .icon {
+      color: #037fff;
+    }
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 96%;
+  }
+}
+
+@mixin emptyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: -webkit-linear-gradient(top, #0f2557, #3778c2);
+  height: 180px;
+  width: 320px;
+  padding: 15px;
+  top: 44px;
+  left: 24px;
+  position: absolute;
+  border: 1px solid #10121b;
+}
+
+@mixin contentCard {
+  .about {
+    display: flex;
+    justify-content: space-around;
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+        color: #037fff;
+      }
+
+      h5 {
+        margin: 0;
+        color: #a4acc4;
+      }
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+
+    a {
+      color: #fff;
+      font-size: 16px;
+      //margin-right: 14px;
+      text-decoration: none;
+
+      &:hover {
+        color: #037fff;
+      }
+    }
+  }
+}

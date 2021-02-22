@@ -1,0 +1,75 @@
+@import "src/sass/base";
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  padding-left: 260px;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: $valeraFamily;
+  color: #a4acc4;
+  font-weight: 400;
+  background: #10121b;
+  @media only screen and (max-width: 1199px) {
+    padding-left: 0;
+  }
+
+  .verticalLines {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    min-height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    z-index: -1;
+    @media only screen and (max-width: 1199px) {
+      left: 0;
+      width: 100%;
+    }
+
+    .line {
+      width: 1px;
+      background: rgba(46, 52, 78, .3);
+      position: absolute;
+      top: 0;
+      height: 100%;
+      min-height: 100vh;
+
+      &:nth-child(1) {
+        left: 20%
+      }
+
+      &:nth-child(2) {
+        left: 40%
+      }
+
+      &:nth-child(3) {
+        left: 60%
+      }
+
+      &:nth-child(4) {
+        left: 80%
+      }
+    }
+  }
+
+  .headerBlock {
+    @include headerBlock;
+  }
+
+  .headerBlockShow {
+    @include headerBlock;
+    @media only screen and (max-width: 1199px) {
+      width: 230px;
+      transform: translateX(0);
+    }
+  }
+}
+
+

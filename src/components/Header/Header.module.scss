@@ -1,0 +1,113 @@
+@import "src/sass/base";
+
+* {
+  box-sizing: border-box;
+
+  .header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .photoBlock {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #2e344e;
+
+      .photoAva {
+        height: 200px;
+        width: 200px;
+        border-radius: 1000px;
+        border: 7px solid #2e344e;
+        @media only screen and (max-width: 1199px) {
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+
+    .navLinks {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0;
+
+      .link {
+        width: 100%;
+        color: #a4acc4;
+        text-transform: uppercase;
+        font-family: $nunitoFamily;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all .4s ease-out;
+        margin: 10px 0;
+
+        &:hover {
+          color: #037fff;
+        }
+
+        &:focus {
+          color: #fff;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          visibility: hidden;
+          z-index: -1;
+        }
+
+        &:hover:before {
+          left: 2%;
+          height: 150%;
+          width: 96%;
+          visibility: visible;
+          background: rgba(3, 127, 255, 0.2);
+          transition: all .4s ease-out;
+        }
+
+        &:focus:before {
+          left: 2%;
+          height: 150%;
+          width: 96%;
+          visibility: visible;
+          background: rgba(3, 127, 255, 1);
+        }
+      }
+    }
+
+    .copyright {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      border-top: 1px solid #2e344e;
+      color: #a4acc4;
+
+      .userName {
+        font-family: $nunitoFamily;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+
+
+

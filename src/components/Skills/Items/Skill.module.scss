@@ -1,0 +1,41 @@
+@import "src/sass/base";
+
+.container {
+  @include itemContainer;
+  width: 20%;
+  @media only screen and (max-width: 1124px) {
+    width: 360px;
+  }
+
+  .item {
+    @media only screen and (max-width: 1124px) {
+      height: 210px;
+      width: 320px;
+    }
+
+    .itemBg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../../../assets/images/bagUp.png');
+      transition: all 1s cubic-bezier(.01, .57, .68, 1.05) 0s;
+      @media only screen and (max-width: 1124px) {
+        background-image: url('../../../assets/images/bagDown.png');
+      }
+    }
+
+    .content {
+      z-index: 0;
+      @include text;
+      text-align: center;
+      font-size: 17px;
+      padding: 10px 20px 34px 17px;
+      @media only screen and (max-width: 1124px) {
+        padding: 10px 43px 21px 23px;
+      }
+    }
+  }
+}
