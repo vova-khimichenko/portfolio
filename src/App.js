@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import styles from './App.module.scss';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -13,7 +13,6 @@ function App() {
 
     const [toggle, setToggle] = useState(true)
     const toggling = () => setToggle(!toggle)
-
     return (
         <HashRouter>
             <div className={styles.app}>
