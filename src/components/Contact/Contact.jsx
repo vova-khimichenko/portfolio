@@ -3,6 +3,7 @@ import styles from './Contact.module.scss'
 import {faMobileAlt} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import react from '../../assets/images/icons8-react-native-64.png'
+import skype from '../../assets/images/skype-48.png'
 
 function Contact() {
 
@@ -15,8 +16,9 @@ function Contact() {
                         <img src={react} alt={'reactIcon'}/>
                     </div>
                     <div className={styles.phone}>
-                        <FontAwesomeIcon icon={faMobileAlt} style={{margin: '0 14px'}}/>
+                        <FontAwesomeIcon icon={faMobileAlt} style={{margin: '0 9px'}}/>
                         <a href={'tel:+375295169670'}>+375-29-516-96-70</a>
+                        <a href={'Skype:himikvovka?chat'}><img src={skype} alt={'skypeIcon'}/>himikvovka</a>
                     </div>
                 </span>
 
