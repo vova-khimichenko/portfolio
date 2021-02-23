@@ -16,7 +16,7 @@ function Contact() {
                         <img src={react} alt={'reactIcon'}/>
                     </div>
                     <div className={styles.phone}>
-                        <FontAwesomeIcon icon={faMobileAlt} style={{margin: '0 9px'}}/>
+                        <FontAwesomeIcon icon={faMobileAlt}/>
                         <a href={'tel:+375295169670'}>+375-29-516-96-70</a>
                         <a href={'Skype:himikvovka?chat'}><img src={skype} alt={'skypeIcon'}/>himikvovka</a>
                     </div>
