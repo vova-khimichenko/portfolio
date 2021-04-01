@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dc162ae2.chunk.css",
-    "main.js": "/portfolio/static/js/main.c6929594.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c6929594.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.24e16257.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.24e16257.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.bcd74f68.chunk.js": "/portfolio/static/js/2.bcd74f68.chunk.js",
-    "static/js/2.bcd74f68.chunk.js.map": "/portfolio/static/js/2.bcd74f68.chunk.js.map",
+    "static/js/2.a3aadab8.chunk.js": "/portfolio/static/js/2.a3aadab8.chunk.js",
+    "static/js/2.a3aadab8.chunk.js.map": "/portfolio/static/js/2.a3aadab8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.2d5ddaeeaf4e47c4b5042b1a20eb9ee7.js": "/portfolio/precache-manifest.2d5ddaeeaf4e47c4b5042b1a20eb9ee7.js",
+    "precache-manifest.ab45ed0d8ecdbc4ca3f969eb20d7f1b3.js": "/portfolio/precache-manifest.ab45ed0d8ecdbc4ca3f969eb20d7f1b3.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.dc162ae2.chunk.css.map": "/portfolio/static/css/main.dc162ae2.chunk.css.map",
-    "static/js/2.bcd74f68.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bcd74f68.chunk.js.LICENSE.txt",
+    "static/js/2.a3aadab8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a3aadab8.chunk.js.LICENSE.txt",
     "static/media/counter.PNG": "/portfolio/static/media/counter.894e4449.PNG",
     "static/media/duck.png": "/portfolio/static/media/duck.337dbe75.png",
     "static/media/github.svg": "/portfolio/static/media/github.21d620ef.svg",
@@ -19,12 +19,13 @@
     "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.e7b8a43d.jpg",
     "static/media/telegram.png": "/portfolio/static/media/telegram.5261fd64.png",
     "static/media/todo.PNG": "/portfolio/static/media/todo.528f66fa.PNG",
-    "static/media/tracking.PNG": "/portfolio/static/media/tracking.c445f87e.PNG"
+    "static/media/tracking.PNG": "/portfolio/static/media/tracking.c445f87e.PNG",
+    "static/media/trackingAppScreenshot.jpg": "/portfolio/static/media/trackingAppScreenshot.baca0cde.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.bcd74f68.chunk.js",
+    "static/js/2.a3aadab8.chunk.js",
     "static/css/main.dc162ae2.chunk.css",
-    "static/js/main.c6929594.chunk.js"
+    "static/js/main.24e16257.chunk.js"
   ]
 }
