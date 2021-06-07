@@ -7,6 +7,12 @@ import skype from '../../assets/images/skype-48.png'
 
 function Contact() {
 
+    const count = []
+
+    for (let i = 0; i < 9; i++) {
+        count.push(0)
+    }
+
     const card = <span>
                     <div className={styles.about}>
                         <div className={styles.icons}>
@@ -29,15 +35,9 @@ function Contact() {
                 <span className={styles.titleShadow}>Call me</span>
             </div>
             <div className={styles.cards}>
-                <span></span>
-                <span></span>
-                {card}
-                <span></span>
-                <span></span>
-                {card}
-                {card}
-                {card}
-                {card}
+                {
+                    count.map(() => card)
+                }
             </div>
         </div>
     );

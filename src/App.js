@@ -13,6 +13,7 @@ function App() {
 
     const [toggle, setToggle] = useState(true)
     const toggling = () => setToggle(!toggle)
+
     return (
         <HashRouter>
             <div className={styles.app}>
@@ -36,7 +37,7 @@ function App() {
                 <Route path='/contacts' component={Contact}/>
             </div>
         </HashRouter>
-    );
+    )
 }
 
 export default App;

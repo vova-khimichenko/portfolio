@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './Projects.module.scss'
 import Project from "./Items/Project";
-import {faCarSide, faGamepad, faListOl, faStopwatch20} from "@fortawesome/free-solid-svg-icons";
+    import {faCarSide, faGamepad, faListOl, faStopwatch20, faTabletAlt} from "@fortawesome/free-solid-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import trackingBg from '../../assets/images/tracking.PNG';
 import toDo from '../../assets/images/todo.PNG';
 import counter from '../../assets/images/counter.PNG';
-import duck
-    from '../../assets/images/duck.png';
+import duck from '../../assets/images/duck.png';
+import github from '../../assets/images/github.PNG';
+import apps from '../../assets/images/apps.PNG'
+// import trackingAppScreenshot from '../../assets/images/trackingAppScreenshot.jpg'
 
 const projects = [
     {
@@ -15,6 +18,7 @@ const projects = [
         icon: faCarSide,
         imagePath: trackingBg,
         projectPath: 'http://trex.by:81'
+        // projectPath: trackingAppScreenshot
     }, {
         title: 'to do',
         description: 'To do list using TypeScript, Storybook, TDD, API.',
@@ -33,6 +37,17 @@ const projects = [
         icon: faGamepad,
         imagePath: duck,
         projectPath: 'https://vovkahimik.github.io/duck/'
+    }, {
+        title: 'github',
+        description: 'Search user GitHub repositories.',
+            icon: faGithub,
+        imagePath: github,
+        projectPath: 'https://vovkahimik.github.io/request_GitHub_repositories/'
+    }, {
+        title: 'next project',
+        description: 'Your site could be here.  ',
+        icon: faTabletAlt,
+        imagePath: apps,
     },
 ]
 
